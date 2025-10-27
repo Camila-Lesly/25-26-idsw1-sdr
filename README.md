@@ -48,8 +48,8 @@ Cada caso de uso puede incluir su descripción, flujo principal, excepciones y p
 Apuntes y conclusiones de las reuniones mantenidas durante el desarrollo del proyecto.  
 
 **Sesiones documentadas:**  
-- [Todas las sesiones](/Sesiones/)  
-- [Sesión 1](/Sesiones/ejemplo-1.md)  
+- [Todas las sesiones](/sesiones/)  
+- [Sesión 1](/sesiones/27-10-2025/)  
 - [Sesión 2](/Sesiones/ejemplo-2.md)  
 - [Sesión 3](/Sesiones/ejemplo-3.md)  
 - [Sesión final](/Sesiones/final.md)
