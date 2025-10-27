@@ -1,42 +1,61 @@
-# Sesiones de requisitado
+<div align=right>
 
-Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeniería del Software I de UNEATLANTICO.
-
-Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta de entrada al desarrollo de una solución basada en software. 
-
-<div align=center>
-
-| |Coordinador|Cliente|Estadísticas|
-|-|-|-|:-:|
-1|@Camila-Lesly|Lucía Terán|[👁️](https://github.com/Camila-Lesly/25-26-IdSw1-SdR) / 📒
-2|@31diego|Mar Pacheco|[👁️](https://github.com/31diego/25-26-IdSw1-SdR) / 📒
-3|@martinlopez7|Jorge Crespo|[👁️](https://github.com/martinlopez7/25-26-IdSw1-SdR) / 📒
-4|@Sergiorl2|Jose Breñosa|[👁️](https://github.com/Sergiorl2/25-26-IdSw1-SdR) / 📒
-5|@Alejandrojuarez0105|David García|[👁️](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR) / 📒
-6|@enmabry|Jose Breñosa|[👁️](https://github.com/enmabry/25-26-IdSw1-SdR) / 📒
+| [![](https://img.shields.io/badge/-Inicio-FFF?style=flat&logo=Emlakjet&logoColor=black)](/README.md) [![](https://img.shields.io/badge/-Modelo_de_Dominio-FFF?style=flat&logo=LiveChat&logoColor=black)](/docs/modeloDeDominio/) [![](https://img.shields.io/badge/-Actores-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/actores/README.md/) [![](https://img.shields.io/badge/-Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/diagramaCasosDeUso/README.md/) [![](https://img.shields.io/badge/-Detallado_Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/detalladoCasosDeUso/README.md) [![](https://img.shields.io/badge/-Diagrama_De_Contexto-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/diagramaDeContexto/README.md) [![](https://img.shields.io/badge/-Prototipos-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/prototipos/README.md) [![](https://img.shields.io/badge/-Sesiones_de_Requisitado-FFF?style=flat&logo=Proton&logoColor=black)](/docs/sesiones/) [![](https://img.shields.io/badge/-Recursos_Adicionales-FFF?style=flat&logo=Proton&logoColor=black)](/docs/recursos/) |
+|:-:|
 
 </div>
 
-> Se ha demostrado, empírica y académicamente, que un porcentaje no menor de proyectos de software que fracasan lo hacen porque está mal llevada esta fase.
+# **myUniverse**
 
-<div align=center>
-
-||
-|-|
-![](/images/modelosUML/modelosUML/trabajoRepos.svg)
-
+<div align="center">
+  <img src="/ruta/ejemplo/logo.png" width="200" alt="Logo del proyecto">
 </div>
 
-## Algunas reglas
+<p align="center">
+  <img alt="Versión" src="https://img.shields.io/badge/version-1.0-blue.svg" />
+  <img alt="Documentación" src="https://img.shields.io/badge/documentación-sí-brightgreen.svg" />
+  <img alt="Estado" src="https://img.shields.io/badge/estado-en%20desarrollo-yellow.svg" />
+</p>
 
-- Reuniones oficiales (en horas de clase)
-  - A estas debe asistir el 100% de los integrantes de los grupos.
-  - Si a las reuniones asiste menos del 80% del grupo, la reunión se cancela y el grupo se da por cerrado. La evaluación se realiza de la forma tradicional (examen parcial, examen final).
-- Reuniones extra: de acuerdo a lo pautado con el cliente.
-- Se debe utilizar el repo del coordinador del grupo y las herramientas de GitHub para gestionar las reuniones y comunicaciones con el cliente, haciendo un racional uso de la trazabilidad.
-- Las imágenes, en la medida de lo posible en formato plantUML. 
-  - Todas las fuentes en la carpeta modelosUML y las imágenes exportadas, en formato svg.
+## **Descripción del Proyecto**
 
-## Rúbrica de revisión
+Breve descripción del proyecto:  
+Explica de qué trata, cuál es su objetivo principal y a quién está dirigido.  
 
-[Rúbrica](l'Rubrica.md)
+## **Modelo de Dominio**
+
+En este apartado se describe la estructura lógica del sistema y las relaciones entre sus componentes principales.  
+
+**Diagramas disponibles:**  
+- [Diagramas de Clases](/Modelo_de_Dominio/Diagramas_de_Clases/)  
+- [Diagramas de Estados](/Modelo_de_Dominio/Diagramas_de_Estado/)  
+- [Diagramas de Objetos](/Modelo_de_Dominio/Diagramas_de_Objetos/)  
+
+## **Casos de Uso**
+
+Se listan los actores del sistema y los casos de uso asociados.  
+Cada caso de uso puede incluir su descripción, flujo principal, excepciones y prototipo asociado.
+
+**Secciones disponibles:**  
+- [Actores](/Casos_de_Uso/Actores/)  
+- [Casos de Uso Detallados](/Casos_de_Uso/Casos_de_Uso/)  
+- [Diagrama de Casos de Uso](/Casos_de_Uso/Diagrama_de_Casos_de_Uso/)  
+- [Diagrama de Contexto](/Casos_de_Uso/Contexto/)  
+- [Prototipos](/Casos_de_Uso/Prototipos/)
+
+## **Sesiones con el Cliente**
+
+Apuntes y conclusiones de las reuniones mantenidas durante el desarrollo del proyecto.  
+
+**Sesiones documentadas:**  
+- [Todas las sesiones](/Sesiones/)  
+- [Sesión 1](/Sesiones/ejemplo-1.md)  
+- [Sesión 2](/Sesiones/ejemplo-2.md)  
+- [Sesión 3](/Sesiones/ejemplo-3.md)  
+- [Sesión final](/Sesiones/final.md)
+
+
+##  **Glosario**
+
+Términos relevantes usados en el proyecto con su definición.  
+- [Glosario completo](/Glosario/)  
