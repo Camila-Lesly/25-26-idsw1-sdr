@@ -4,7 +4,7 @@
 
 ---
 
-### 1. Lugar
+### 1. Area
 
 Entidad espacial física o lógica dentro del campus. Comprende tanto espacios individuales como sus agrupaciones jerárquicas (plantas, edificios, zonas).
 
