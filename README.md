@@ -8,7 +8,7 @@
 # **myUniverse**
 
 <div align="center">
-  <img src="/ruta/ejemplo/logo.png" width="200" alt="Logo del proyecto">
+  <img src="/imágenes/Logo.png" width="400" alt="Logo del proyecto">
 </div>
 
 <p align="center">
@@ -19,17 +19,16 @@
 
 ## **Descripción del Proyecto**
 
-Breve descripción del proyecto:  
-Explica de qué trata, cuál es su objetivo principal y a quién está dirigido.  
+Crear una aplicación móvil con un mapa 3D interactivo del campus para que estudiantes y visitantes puedan orientarse fácilmente, conocer aulas, servicios y puntos de interés.  
 
 ## **Modelo de Dominio**
 
 En este apartado se describe la estructura lógica del sistema y las relaciones entre sus componentes principales.  
 
 **Diagramas disponibles:**  
-- [Diagramas de Clases](./modeloDeDominio/diagramaDeClases.puml)  
-- [Diagramas de Estados](./modeloDeDominio/diagramaDeEstados.puml)  
-- [Diagramas de Objetos](/ModeloDeDominio/Diagramas_de_Objetos/)  
+- [Diagramas de Clases](./modeloDeDominio/DiagramaDeClases/)  
+- [Diagramas de Estados](./modeloDeDominio/DiagramaDeEstados/)  
+- [Diagramas de Objetos](./modeloDeDominio/DiagramaDeObjetos/)  
 
 ## **Casos de Uso**
 
