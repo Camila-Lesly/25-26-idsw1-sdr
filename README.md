@@ -58,4 +58,4 @@ Apuntes y conclusiones de las reuniones mantenidas durante el desarrollo del pro
 ##  **Glosario**
 
 Términos relevantes usados en el proyecto con su definición.  
-- [Glosario completo](/Glosario/)  
+- [Glosario completo](/glosario/glosario.md)  
