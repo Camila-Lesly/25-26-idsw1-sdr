@@ -8,7 +8,7 @@
 # **myUniverse**
 
 <div align="center">
-  <img src="/imágenes/Logo.png" width="400" alt="Logo del proyecto">
+  <img src="./documentos/imágenes/Logo.png" width="400" alt="Logo del proyecto">
 </div>
 
 <p align="center">
