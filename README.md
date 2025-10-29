@@ -17,6 +17,11 @@
   <img alt="Estado" src="https://img.shields.io/badge/estado-en%20desarrollo-yellow.svg" />
 </p>
 
+## Leyenda de colores
+
+- ![En progreso](https://img.shields.io/badge/estado-en%20trabajo-FFA500)
+- ![Terminado](https://img.shields.io/badge/estado-terminado-red)
+
 ## **Descripción del Proyecto**
 
 Crear una aplicación móvil con un mapa 3D interactivo del campus para que estudiantes y visitantes puedan orientarse fácilmente, conocer aulas, servicios y puntos de interés.  
