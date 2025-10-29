@@ -28,7 +28,7 @@ En este apartado se describe la estructura lógica del sistema y las relaciones 
 **Diagramas disponibles:**  
 - [Diagramas de Clases](./documentos/modeloDeDominio/DiagramaDeClases/diagramaDeClases.svg)  
 - [Diagramas de Estados](./documentos/modeloDeDominio/DiagramaDeEstados/diagramaDeEstados.svg)  
-- [Diagramas de Objetos](./modeloDeDominio/DiagramaDeObjetos/)  
+- [Diagramas de Objetos](./documentos/modeloDeDominio/DiagramaDeObjetos/)  
 
 ## **Casos de Uso**
 
@@ -47,19 +47,14 @@ Cada caso de uso puede incluir su descripción, flujo principal, excepciones y p
 Apuntes y conclusiones de las reuniones mantenidas durante el desarrollo del proyecto.  
 
 **Sesiones documentadas:**  
-- [Todas las sesiones](/sesiones/)  
-- [Sesión 1](/sesiones/27-10-2025/)  
+- [Todas las sesiones](./documentos/sesiones/)  
+- [Sesión 1](./documentos/sesiones/27-10-2025/)  
 - [Sesión 2](/Sesiones/ejemplo-2.md)  
 - [Sesión 3](/Sesiones/ejemplo-3.md)  
 - [Sesión final](/Sesiones/final.md)
 
 
-## Estado de las secciones (leyenda)
-
-- ![](https://img.shields.io/badge/-En_progreso-FFA500?style=flat&logo=clock&logoColor=black)  — Color naranja: sección en progreso.
-- ![](https://img.shields.io/badge/-Completado-FF0000?style=flat&logo=check&logoColor=white)  — Color rojo: sección terminada.
-
 ##  **Glosario**
 
 Términos relevantes usados en el proyecto con su definición.  
-- [Glosario completo](/glosario/glosario.md)
+- [Glosario completo](./documentos/glosario/glosario.md)  
