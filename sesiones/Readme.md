@@ -10,4 +10,4 @@ En el desarrollo de este Proyecto, hemos tenido una serie de sesiones con el cli
   * [Notas María](/sesiones/27-10-2025/Apuntes%20Invidencia%20Maria%20Arróniz%20.md)
   * [Notas Bruno]
   * [Notas Alex](/sesiones/27-10-2025/Apuntes%20Alex%20Borja.md)
-  * [Notas Eirik]
+  * [Notas Eirik](/sesiones/27-10-2025/Apuntes%20Eirik%20Rosete.md)
