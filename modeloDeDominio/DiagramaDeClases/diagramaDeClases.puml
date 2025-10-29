@@ -1,0 +1,16 @@
+@startuml
+
+class Mapa
+class Edificio
+class Planta
+class Aula
+class "Punto de interes"
+
+Mapa  *-- Edificio
+Mapa *-- "Punto de interes"
+Edificio *-- Planta
+Planta  *-- Aula
+Planta o--  "Punto de interes"
+
+
+@enduml
