@@ -1,0 +1,13 @@
+@startuml
+
+[*] --> Inactivo
+
+Inactivo --> Explorando : iniciar
+Explorando --> Explorando : cambiar vista
+Explorando --> Consultando : seleccionar área
+Consultando --> Explorando : regresar
+Explorando --> Inactivo : salir
+
+Inactivo --> [*]
+
+@enduml

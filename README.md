@@ -1,6 +1,6 @@
 <div align=right>
 
-| [![](https://img.shields.io/badge/-Inicio-FFF?style=flat&logo=Emlakjet&logoColor=black)](/README.md) [![](https://img.shields.io/badge/-Modelo_de_Dominio-FFF?style=flat&logo=LiveChat&logoColor=black)](./modeloDeDominio/) [![](https://img.shields.io/badge/-Actores-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/actores/README.md/) [![](https://img.shields.io/badge/-Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/diagramaCasosDeUso/README.md/) [![](https://img.shields.io/badge/-Detallado_Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/detalladoCasosDeUso/README.md) [![](https://img.shields.io/badge/-Diagrama_De_Contexto-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/diagramaDeContexto/README.md) [![](https://img.shields.io/badge/-Prototipos-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/prototipos/README.md) [![](https://img.shields.io/badge/-Sesiones_de_Requisitado-FFF?style=flat&logo=Proton&logoColor=black)](/sesiones/) [![](https://img.shields.io/badge/-Recursos_Adicionales-FFF?style=flat&logo=Proton&logoColor=black)](/docs/recursos/) |
+| [![](https://img.shields.io/badge/-Inicio-FFF?style=flat&logo=Emlakjet&logoColor=black)](/README.md) [![](https://img.shields.io/badge/-Modelo_de_Dominio-FFA500?style=flat&logo=LiveChat&logoColor=white)](./documentos/modeloDeDominio/) [![](https://img.shields.io/badge/-Actores-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/actores/README.md/) [![](https://img.shields.io/badge/-Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/diagramaCasosDeUso/README.md/) [![](https://img.shields.io/badge/-Detallado_Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/detalladoCasosDeUso/README.md) [![](https://img.shields.io/badge/-Diagrama_De_Contexto-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/diagramaDeContexto/README.md) [![](https://img.shields.io/badge/-Prototipos-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/prototipos/README.md) [![](https://img.shields.io/badge/-Sesiones_de_Requisitado-FFF?style=flat&logo=Proton&logoColor=black)](./documentos/sesiones/) [![](https://img.shields.io/badge/-Recursos_Adicionales-FFF?style=flat&logo=Proton&logoColor=black)](/docs/recursos/) |
 |:-:|
 
 </div>
@@ -8,7 +8,7 @@
 # **myUniverse**
 
 <div align="center">
-  <img src="/imágenes/Logo.png" width="400" alt="Logo del proyecto">
+  <img src="./documentos/imágenes/Logo.png" width="400" alt="Logo del proyecto">
 </div>
 
 <p align="center">
@@ -16,6 +16,11 @@
   <img alt="Documentación" src="https://img.shields.io/badge/documentación-sí-brightgreen.svg" />
   <img alt="Estado" src="https://img.shields.io/badge/estado-en%20desarrollo-yellow.svg" />
 </p>
+
+## Leyenda de colores
+
+- ![En progreso](https://img.shields.io/badge/estado-en%20trabajo-FFA500)
+- ![Terminado](https://img.shields.io/badge/estado-terminado-red)
 
 ## **Descripción del Proyecto**
 
@@ -26,9 +31,9 @@ Crear una aplicación móvil con un mapa 3D interactivo del campus para que estu
 En este apartado se describe la estructura lógica del sistema y las relaciones entre sus componentes principales.  
 
 **Diagramas disponibles:**  
-- [Diagramas de Clases](./modeloDeDominio/DiagramaDeClases/)  
-- [Diagramas de Estados](./modeloDeDominio/DiagramaDeEstados/)  
-- [Diagramas de Objetos](./modeloDeDominio/DiagramaDeObjetos/)  
+- [Diagramas de Clases](./documentos/modeloDeDominio/DiagramaDeClases/diagramaDeClases.svg)  
+- [Diagramas de Estados](./documentos/modeloDeDominio/DiagramaDeEstados/diagramaDeEstados.svg)  
+- [Diagramas de Objetos](./documentos/modeloDeDominio/DiagramaDeObjetos/)  
 
 ## **Casos de Uso**
 
@@ -47,8 +52,8 @@ Cada caso de uso puede incluir su descripción, flujo principal, excepciones y p
 Apuntes y conclusiones de las reuniones mantenidas durante el desarrollo del proyecto.  
 
 **Sesiones documentadas:**  
-- [Todas las sesiones](/sesiones/)  
-- [Sesión 1](/sesiones/27-10-2025/)  
+- [Todas las sesiones](./documentos/sesiones/)  
+- [Sesión 1](./documentos/sesiones/27-10-2025/)  
 - [Sesión 2](/Sesiones/ejemplo-2.md)  
 - [Sesión 3](/Sesiones/ejemplo-3.md)  
 - [Sesión final](/Sesiones/final.md)
@@ -57,4 +62,4 @@ Apuntes y conclusiones de las reuniones mantenidas durante el desarrollo del pro
 ##  **Glosario**
 
 Términos relevantes usados en el proyecto con su definición.  
-- [Glosario completo](/glosario/glosario.md)  
+- [Glosario completo](./documentos/glosario/glosario.md)  
