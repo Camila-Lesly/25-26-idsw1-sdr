@@ -28,3 +28,15 @@
 | [Código fuente](./DiagramaDeEstados/diagramaDeEstados.puml) |
 
 </div>
+
+---
+
+## Diagrama de Objetos
+
+<div align="center">
+
+| ![Diagrama de objetos](./DiagramaDeObjetos/diagramaDeObjetos.svg) |
+|:-:|
+| [Código fuente](./DiagramaDeObjetos/diagramaDeObjetos.puml) |
+
+</div>
