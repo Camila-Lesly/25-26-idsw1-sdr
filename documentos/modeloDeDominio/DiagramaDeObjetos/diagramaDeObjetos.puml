@@ -1,0 +1,31 @@
+@startuml
+
+object Campus
+object Edificio
+object Exterior
+object Planta1
+object Planta_3
+object Planta_2
+object Cafeteria
+object ParkingSubterraneo
+object PistaPadel
+object Polideportivo
+object Aula1
+object MaquinaExpendedora
+
+
+Campus --> Edificio
+Campus --> Exterior
+
+Edificio --> Planta1
+Edificio --> Planta_3
+Edificio --> Planta_2
+
+Planta1 --> Aula1
+Planta_3 --> ParkingSubterraneo
+Planta_2 --> Cafeteria
+Planta_2 --> MaquinaExpendedora
+
+Exterior --> PistaPadel
+Exterior --> Polideportivo
+
