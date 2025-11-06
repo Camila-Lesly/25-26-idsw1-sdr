@@ -1,16 +1,21 @@
 @startuml
 
-class Mapa
+class Campus
 class Edificio
+class Exterior
 class Planta
-class Aula
-class "Punto de interes"
+class Espacio
+class Parking
+class Verde
+class AreaDeportiva
 
-Mapa  *-- Edificio
-Mapa *-- "Punto de interes"
+
+Campus  *-- Edificio
+Campus  *-- Exterior
 Edificio *-- Planta
-Planta  *-- Aula
-Planta o--  "Punto de interes"
-
+Planta  *-- Espacio
+Planta o-- Parking
+Exterior *-- Verde
+Exterior *-- AreaDeportiva
 
 @enduml
