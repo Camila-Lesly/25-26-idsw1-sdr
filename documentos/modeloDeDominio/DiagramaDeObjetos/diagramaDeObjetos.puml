@@ -1,0 +1,101 @@
+@startuml
+
+object "uneatlantico : Campus" as uneatlantico {
+    nombre = "Univerdad Europea del Atlántico"
+    direccion = "
+    Calle Isabel Torres, 21, 39011 Santander, España"
+}
+
+object "edificioPrincipal : Edificio" as edificioPrincipal {
+    nombre = "Centro de estudios universitarios"
+    numPlantas = 7
+}
+
+object "sotano3 : Planta" as sotano3 {
+    numero = -3
+    descripcion = "Sótano 3"
+}
+
+object "planta0 : Planta" as planta0 {
+    numero = 0
+    descripcion = "Planta Baja"
+}
+
+object "aula1 : Espacio" as aula1 {
+    nombre = "Aula 1.1"
+    tipo = "Aula"
+    capacidad = 40
+    ptoInteres: true
+}
+
+object "ORI : Espacio" as ORI {
+    nombre = "ORI"
+    tipo = "oficina"
+    capacidad = 7
+    ptoInteres: true
+}
+
+object "parkingA : Parking" as parkingA {
+    nombre = "Estacionamiento A"
+    capacidad = 30
+    tipoVehiculo = "Automóviles"
+    ptoInteres: true
+}
+
+object "parkingB : Parking" as parkingB {
+    nombre = "Estacionamiento B"
+    capacidad = 30
+    tipoVehiculo = "Automóviles"
+    ptoInteres: true
+}
+
+object "parkingSotano : Parking" as parkingSotano {
+    nombre = "Estacionamiento Sotano"
+    capacidad = 100
+    tipoVehiculo = "Automóviles"
+    ptoInteres: true
+}
+
+object "exterior : Exterior" as exterior {
+    nombre = "Zona exterior edificioPrincipal"
+    area = 5000
+}
+
+object "areaVerde1 : Verde" as areaVerde1 {
+    nombre = "Área Verde 1
+    superficie = "Césped sintético"
+    descripcion = "Punto de encuentro"
+    ptoInteres = true
+}
+
+object "canchaPadel1 : AreaDeportiva" as canchaPadel1 {
+    nombre = "Cancha de Padel"
+    deporte = "Padel"
+    ptoInteres = true
+}
+
+object "pabellon : AreaDeportiva" as pabellon {
+    nombre = "Pabellón Deportivo"
+    deporte = "Múltiple"
+    ptoInteres = true
+}
+
+uneatlantico *-- edificioPrincipal
+uneatlantico *-- exterior
+
+edificioPrincipal *-- sotano3
+edificioPrincipal *-- planta0
+
+planta0 *-- aula1
+planta0 *-- ORI
+sotano3 o-- parkingSotano
+
+planta0 o-- parkingA
+planta0 o-- parkingB
+
+exterior *-- areaVerde1
+exterior *-- canchaPadel1
+exterior *-- pabellon
+
+@enduml
+

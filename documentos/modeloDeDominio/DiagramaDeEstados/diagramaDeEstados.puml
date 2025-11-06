@@ -1,13 +1,16 @@
 @startuml
 
-[*] --> Inactivo
+[*] --> NavegandoMenú
 
-Inactivo --> Explorando : iniciar
-Explorando --> Explorando : cambiar vista
-Explorando --> Consultando : seleccionar área
-Consultando --> Explorando : regresar
-Explorando --> Inactivo : salir
+NavegandoMenú --> ExplorandoEdificio : Entrar
+ExplorandoEdificio --> NavegandoMenú : Regresar
 
-Inactivo --> [*]
+ExplorandoEdificio --> ExplorandoPlanta : Seleccionar planta
+ExplorandoPlanta --> ExplorandoEdificio : Regresar
+
+ExplorandoEdificio --> ViendoPuntoDeInteres : Seleccionar punto de interés
+ViendoPuntoDeInteres --> ExplorandoEdificio : Regresar
+
+NavegandoMenú --> [*] : Salir del programa
 
 @enduml
