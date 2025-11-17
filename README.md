@@ -54,7 +54,7 @@ Apuntes y conclusiones de las reuniones mantenidas durante el desarrollo del pro
 **Sesiones documentadas:**  
 - [Todas las sesiones](./documentos/sesiones/)  
 - [Sesión 1](./documentos/sesiones/27-10-2025/)  
-- [Sesión 2](/Sesiones/ejemplo-2.md)  
+- [Sesión 2](./documentos/sesiones/30-10-2025/)  
 - [Sesión 3](/Sesiones/ejemplo-3.md)  
 - [Sesión final](/Sesiones/final.md)
 
