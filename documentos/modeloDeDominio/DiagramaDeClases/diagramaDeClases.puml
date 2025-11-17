@@ -1,21 +1,15 @@
 @startuml
-
+class Visitante
+class Espacio
 class Campus
 class Edificio
 class Exterior
 class Planta
-class Espacio
-class Parking
-class Verde
-class AreaDeportiva
 
 
+Visitante -r-  Espacio
+Espacio *-- Campus
 Campus  *-- Edificio
 Campus  *-- Exterior
 Edificio *-- Planta
-Planta  *-- Espacio
-Planta o-- Parking
-Exterior *-- Verde
-Exterior *-- AreaDeportiva
-
 @enduml
