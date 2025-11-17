@@ -31,9 +31,9 @@ Crear una aplicación móvil con un mapa 3D interactivo del campus para que estu
 En este apartado se describe la estructura lógica del sistema y las relaciones entre sus componentes principales.  
 
 **Diagramas disponibles:**  
-- [Diagramas de Clases](./documentos/modeloDeDominio/DiagramaDeClases/diagramaDeClases.svg)  
-- [Diagramas de Estados](./documentos/modeloDeDominio/DiagramaDeEstados/diagramaDeEstados.svg)  
-- [Diagramas de Objetos](./documentos/modeloDeDominio/DiagramaDeObjetos/)  
+- [Diagramas de Clases](/documentos/00-modeloDeDominio/DiagramaDeClases/diagramaDeClases.svg)  
+- [Diagramas de Estados](/documentos/modeloDeDominio/DiagramaDeEstados/diagramaDeEstados.svg)  
+- [Diagramas de Objetos](/documentos/modeloDeDominio/DiagramaDeObjetos/)  
 
 ## **Casos de Uso**
 
