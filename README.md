@@ -1,6 +1,6 @@
 <div align=right>
 
-| [![](https://img.shields.io/badge/-Inicio-FFF?style=flat&logo=Emlakjet&logoColor=black)](/README.md) [![](https://img.shields.io/badge/-Modelo_de_Dominio-FFA500?style=flat&logo=LiveChat&logoColor=white)](./documentos/modeloDeDominio/README.md) [![](https://img.shields.io/badge/-Actores-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/actores/README.md/) [![](https://img.shields.io/badge/-Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/diagramaCasosDeUso/README.md/) [![](https://img.shields.io/badge/-Detallado_Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/detalladoCasosDeUso/README.md) [![](https://img.shields.io/badge/-Diagrama_De_Contexto-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/diagramaDeContexto/README.md) [![](https://img.shields.io/badge/-Prototipos-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/prototipos/README.md) [![](https://img.shields.io/badge/-Sesiones_de_Requisitado-FFF?style=flat&logo=Proton&logoColor=black)](./documentos/sesiones/) [![](https://img.shields.io/badge/-Recursos_Adicionales-FFF?style=flat&logo=Proton&logoColor=black)](/docs/recursos/) |
+| [![](https://img.shields.io/badge/-Inicio-FFF?style=flat&logo=Emlakjet&logoColor=black)](/README.md) [![](https://img.shields.io/badge/-commitlint-282c34?style=flat&logo=commitlint&logoColor=white)](./documentos/commits/commit-instructions.md)  [![](https://img.shields.io/badge/-Modelo_de_Dominio-FFA500?style=flat&logo=LiveChat&logoColor=white)](./documentos/00-modeloDeDominio/) [![](https://img.shields.io/badge/-Actores-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/actores/README.md/) [![](https://img.shields.io/badge/-Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/diagramaCasosDeUso/README.md/) [![](https://img.shields.io/badge/-Detallado_Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/detalladoCasosDeUso/README.md) [![](https://img.shields.io/badge/-Diagrama_De_Contexto-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/diagramaDeContexto/README.md) [![](https://img.shields.io/badge/-Prototipos-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/prototipos/README.md) [![](https://img.shields.io/badge/-Sesiones_de_Requisitado-FFF?style=flat&logo=Proton&logoColor=black)](./documentos/sesiones/) [![](https://img.shields.io/badge/-Recursos_Adicionales-FFF?style=flat&logo=Proton&logoColor=black)](/docs/recursos/) |
 |:-:|
 
 </div>
@@ -54,7 +54,7 @@ Apuntes y conclusiones de las reuniones mantenidas durante el desarrollo del pro
 **Sesiones documentadas:**  
 - [Todas las sesiones](./documentos/sesiones/)  
 - [Sesión 1](./documentos/sesiones/27-10-2025/)  
-- [Sesión 2](/Sesiones/ejemplo-2.md)  
+- [Sesión 2](./documentos/sesiones/30-10-2025/)  
 - [Sesión 3](/Sesiones/ejemplo-3.md)  
 - [Sesión final](/Sesiones/final.md)
 

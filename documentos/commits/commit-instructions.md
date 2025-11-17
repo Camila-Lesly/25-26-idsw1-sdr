@@ -5,41 +5,30 @@
 
 </div>
 
-# Glosario del Sistema de Mapa Interactivo Universitario
+## ESTRUCTURA
 
-## Modelo de Dominio - Conceptos Fundamentales
+tipo(alcance): descripción breve
 
----
+## TIPOS PERMITIDOS
 
-### 1. Area
+- feat: nueva funcionalidad
+- fix: corrección de errores
+- docs: cambios en documentación
+- style: formato, espacios (sin cambios de lógica)
+- refactor: reorganización de código sin cambios funcionales
+- test: agregar o modificar pruebas
+- chore: tareas de mantenimiento
 
-Entidad espacial física o lógica dentro del campus. Comprende tanto espacios individuales como sus agrupaciones jerárquicas (plantas, edificios, zonas).
+## REGLAS
 
-**Ejemplos:** Aula, cafetería, oficina administrativa, planta de edificio, instalación deportiva, estacionamiento.
+- Primera línea máximo 72 caracteres
+- Usar infinitivo (agregar, corregir, actualizar)
+- Sin punto final en la primera línea
+- Alcance opcional entre paréntesis
+- Cuerpo del mensaje opcional con más detalles
 
----
+## EJEMPLOS
 
-### 2. MetaDatos
-
-Información asociada al sistema en cualquier formato. Incluye descripciones textuales, valores numéricos, metadata y cualquier contenido informativo vinculado a entidades del dominio.
-
-**Ejemplos:** Nombre de ubicación, horario de servicio, descripción de funcionalidad, restricciones de acceso, tipo de espacio.
-
----
-
-### 3. Vista
-
-Representación visual o sensorial del sistema. Define cómo se presenta la información al usuario a través de diferentes medios y formatos de visualización.
-
-**Ejemplos:** Mapa 3D interactivo, plano 2D, tour virtual 360 grados, descripción por audio, fotografía panorámica.
-
----
-
-### 4. Ajuste
-
-Parámetro configurable que personaliza la experiencia del usuario. Permite adaptar el sistema según necesidades, preferencias o características específicas del usuario.
-
-**Ejemplos:** Selección de idioma, modo de accesibilidad, preferencias de visualización, configuración de navegación por audio.
-
----
-
+feat(auth): agregar validación de email
+fix(api): corregir error de conexión timeout
+docs(readme): actualizar instrucciones de instalación
