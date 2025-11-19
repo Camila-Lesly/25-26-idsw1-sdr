@@ -1,13 +1,15 @@
 @startuml
 
 [*] --> NavegandoMenú
-NavegandoMenú --> ExplorandoEdificio : Entrar
-ExplorandoEdificio --> ExplorandoPlanta : Seleccionar planta
-ExplorandoEdificio  --> ViendoPuntoDeInteres : Seleccionar punto de interés
 
-ViendoPuntoDeInteres --> ExplorandoEdificio : Regresar
-ExplorandoPlanta --> ExplorandoEdificio : Regresar
+NavegandoMenú --> ExplorandoEdificio : Entrar
 ExplorandoEdificio --> NavegandoMenú : Regresar
+
+ExplorandoEdificio --> ExplorandoPlanta : Seleccionar planta
+ExplorandoPlanta --> ExplorandoEdificio : Regresar
+
+ExplorandoEdificio --> ViendoPuntoDeInteres : Seleccionar punto de interés
+ViendoPuntoDeInteres --> ExplorandoEdificio : Regresar
 
 NavegandoMenú --> [*] : Salir del programa
 

@@ -1,0 +1,115 @@
+@startuml
+
+object "firibicundio : Visitante" as firibicundio {
+    nombre = "firibicundio"
+}
+
+object "aula1 : Espacio" as aula1 {
+    nombre = "Aula 1.1"
+    tipo = "Aula"
+    capacidad = 40
+    ptoInteres = true
+    descripcion = null
+}
+
+object "ORI : Espacio" as ORI {
+    nombre = "ORI"
+    tipo = "Oficina"
+    capacidad = 7
+    ptoInteres = true
+    descripcion = "Oficina de Relaciones Internacionales"
+}
+
+object "parkingA : Espacio" as parkingA {
+    nombre = "Parking A"
+    tipo = "Parking"
+    capacidad = 30
+    ptoInteres = true
+    descripcion = "Automóviles"
+}
+
+object "parkingB : Espacio" as parkingB {
+    nombre = "Parking B"
+    tipo = "Parking"
+    capacidad = 30
+    ptoInteres = true
+    descripcion = "Automóviles"
+}
+
+object "parkingSotano : Espacio" as parkingSotano {
+    nombre = "Parking Sótano"
+    tipo = "Parking"
+    capacidad = 100
+    ptoInteres = true
+    descripcion = "Automóviles"
+}
+
+object "canchaPadel1 : Espacio" as canchaPadel1 {
+    nombre = "Cancha de Padel"
+    tipo = "Cancha"
+    capacidad = null
+    ptoInteres = true
+    descripcion = "Padel"
+}
+
+object "pabellon : Espacio" as pabellon {
+    nombre = "Pabellón Deportivo"
+    tipo = "Cancha"
+    capacidad = null
+    ptoInteres = true
+    descripcion = "Múltiple"
+}
+
+object "areaVerde1 : Espacio" as areaVerde1 {
+    nombre = "Área Verde 1"
+    tipo = "Área Verde"
+    capacidad = null
+    ptoInteres = true
+    descripcion = "Césped sintético — Punto de encuentro"
+}
+
+object "uneatlantico : Campus" as uneatlantico {
+    nombre = "Univerdad Europea del Atlántico"
+    direccion = "Calle Isabel Torres, 21, 39011 Santander, España"
+}
+
+object "exterior : Exterior" as exterior {
+    nombre = "Zona exterior edificioPrincipal"
+    area = 5000
+}
+
+object "edificioPrincipal : Edificio" as edificioPrincipal {
+    nombre = "Centro de estudios universitarios"
+    numPlantas = 7
+}
+
+object "sotano3 : Planta" as sotano3 {
+    numero = -3
+    descripcion = "Sótano 3"
+}
+
+object "planta0 : Planta" as planta0 {
+    numero = 0
+    descripcion = "Planta Baja"
+}
+
+firibicundio -right- ORI
+
+aula1 *-- uneatlantico
+ORI *-- uneatlantico
+
+parkingSotano *-- uneatlantico
+parkingA *-- uneatlantico
+parkingB *-- uneatlantico
+
+areaVerde1 *-- uneatlantico
+canchaPadel1 *-- uneatlantico
+pabellon *-- uneatlantico
+
+uneatlantico *-- edificioPrincipal
+uneatlantico *-- edificioPrincipal
+
+edificioPrincipal *-- sotano3
+edificioPrincipal *-- planta0
+
+@enduml
