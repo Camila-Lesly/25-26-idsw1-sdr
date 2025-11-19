@@ -11,7 +11,7 @@
 
 <div align="center">
 
-| ![Diagrama de clases](./DiagramaDeClases/diagramaDeClases.svg) |
+| [![Diagrama de clases](./DiagramaDeClases/diagramaDeClases.svg)](./DiagramaDeClases/diagramaDeClases.svg) |
 |:-:|
 | [Código fuente](./DiagramaDeClases/diagramaDeClases.puml) |
 
@@ -23,9 +23,17 @@
 
 <div align="center">
 
-| ![Diagrama de estados](./DiagramaDeEstados/diagramaDeEstados.svg) |
+### Espacio
+
+| [![Diagrama de estados de espacio](./DiagramaDeEstados/DdEEspacio/diagramaDeEstados.png)](./DiagramaDeEstados/DdEEspacio/diagramaDeEstados.png) |
 |:-:|
-| [Código fuente](./DiagramaDeEstados/diagramaDeEstados.puml) |
+| [Código fuente](./DiagramaDeEstados/DdEEspacio/diagramaDeEstados.puml) |
+
+### Usuario
+
+| [![Diagrama de estados de usuario](./DiagramaDeEstados/DdEUsuario/diagramaDeEstados.svg)](./DiagramaDeEstados/DdEUsuario/diagramaDeEstados.svg) |
+|:-:|
+| [Código fuente](./DiagramaDeEstados/DdEUsuario/diagramaDeEstados.puml) |
 
 </div>
 
@@ -35,7 +43,7 @@
 
 <div align="center">
 
-| ![Diagrama de objetos](./DiagramaDeObjetos/diagramaDeObjetos.svg) |
+| [![Diagrama de objetos](./DiagramaDeObjetos/diagramaDeObjetos.svg)](./DiagramaDeObjetos/diagramaDeObjetos.svg) |
 |:-:|
 | [Código fuente](./DiagramaDeObjetos/diagramaDeObjetos.puml) |
 
