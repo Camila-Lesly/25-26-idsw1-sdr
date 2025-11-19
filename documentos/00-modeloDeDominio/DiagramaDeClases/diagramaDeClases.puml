@@ -1,0 +1,15 @@
+@startuml
+class Visitante
+class Espacio
+class Campus
+class Edificio
+class Exterior
+class Planta
+
+
+Visitante -r-  Espacio
+Espacio *-- Campus
+Campus  *-- Edificio
+Campus  *-- Exterior
+Edificio *-- Planta
+@enduml
