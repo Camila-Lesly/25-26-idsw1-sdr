@@ -1,15 +1,33 @@
 @startuml
+class Ubicación
 class Visitante
 class Espacio
-class Campus
+class Universidad
 class Edificio
 class Exterior
 class Planta
+class AreaDeportiva
+class Verde 
+class Recorrido
+class Pasillo
+class Hall
+class Parking
 
-
-Visitante -r-  Espacio
-Espacio *-- Campus
-Campus  *-- Edificio
-Campus  *-- Exterior
+Visitante -->  Ubicación
+Visitante --> Recorrido
+Recorrido --o Ubicación
+Universidad  *-- Edificio
 Edificio *-- Planta
+Universidad  *-- Exterior
+Exterior *-- AreaDeportiva
+Exterior *-- Verde
+Planta *-- Ubicación
+Espacio -r-|> Ubicación
+Pasillo -up-|> Ubicación
+Hall -up-|> Ubicación
+Parking -up-|> Ubicación
+Verde --|> Ubicación
+AreaDeportiva -r-|> Ubicación
+Edificio -[hidden]l-> Exterior
+AreaDeportiva -[hidden]r-> Recorrido
 @enduml
