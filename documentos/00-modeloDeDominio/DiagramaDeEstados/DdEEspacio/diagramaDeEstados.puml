@@ -1,0 +1,26 @@
+@startuml
+
+[*] --> Cerrado
+
+Cerrado --> Abierto : Abrir espacio
+Abierto --> Cerrado : Cerrar espacio
+
+Abierto --> EnUso : Ocupación detectada
+EnUso --> Abierto : Usuario sale
+
+EnUso --> EventoEspecial : Iniciar evento/programa
+EventoEspecial --> EnUso : Terminar evento
+
+Abierto --> Mantenimiento : Iniciar mantenimiento
+EnUso --> Mantenimiento : Forzar cierre por mantenimiento
+
+Mantenimiento --> Abierto : Finalizar mantenimiento
+Mantenimiento --> Cerrado : Cerrar espacio
+
+Abierto --> Reservado : Realizar reserva
+Reservado --> Abierto : Cancelar reserva
+Reservado --> EnUso : Llegada del usuario reservado
+
+[*] <-- Cerrado
+
+@enduml
