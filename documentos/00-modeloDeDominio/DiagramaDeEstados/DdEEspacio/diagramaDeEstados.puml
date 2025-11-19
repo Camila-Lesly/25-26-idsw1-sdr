@@ -2,25 +2,23 @@
 
 [*] --> Cerrado
 
-Cerrado --> Abierto : Abrir espacio
-Abierto --> Cerrado : Cerrar espacio
+Cerrado --> Abierto : espacio abierto
+Abierto --> Cerrado : espacio cerrado
 
-Abierto --> EnUso : Ocupación detectada
-EnUso --> Abierto : Usuario sale
+Abierto --> EnUso : usuario entra
+EnUso --> Abierto : usuario sale
 
-EnUso --> EventoEspecial : Iniciar evento/programa
-EventoEspecial --> EnUso : Terminar evento
+Abierto --> Reservado : reserva creada
+Reservado --> Abierto : reserva cancelada
+Reservado --> EnUso : usuario con reserva llega
 
-Abierto --> Mantenimiento : Iniciar mantenimiento
-EnUso --> Mantenimiento : Forzar cierre por mantenimiento
+Abierto --> Mantenimiento : mantenimiento iniciado
+EnUso --> Mantenimiento : desalojo / cierre forzoso
+Reservado --> Mantenimiento : mantenimiento urgente
 
-Mantenimiento --> Abierto : Finalizar mantenimiento
-Mantenimiento --> Cerrado : Cerrar espacio
+Mantenimiento --> Abierto : mantenimiento finalizado
+Mantenimiento --> Cerrado : cierre definitivo
 
-Abierto --> Reservado : Realizar reserva
-Reservado --> Abierto : Cancelar reserva
-Reservado --> EnUso : Llegada del usuario reservado
-
-[*] <-- Cerrado
+Cerrado --> Mantenimiento : revisión programada
 
 @enduml
