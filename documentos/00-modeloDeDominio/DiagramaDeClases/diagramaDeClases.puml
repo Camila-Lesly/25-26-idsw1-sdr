@@ -10,7 +10,7 @@ class AreaDeportiva
 class Verde 
 class Recorrido
 class Pasillo
-class Hall
+class Entrada
 class Parking
 
 Visitante -->  Ubicación
@@ -22,9 +22,9 @@ Universidad  *-- Exterior
 Exterior *-- AreaDeportiva
 Exterior *-- Verde
 Planta *-- Ubicación
-Espacio -r-|> Ubicación
+Espacio -up-|> Ubicación
 Pasillo -up-|> Ubicación
-Hall -up-|> Ubicación
+Entrada -up-|> Ubicación
 Parking -up-|> Ubicación
 Verde --|> Ubicación
 AreaDeportiva -r-|> Ubicación
