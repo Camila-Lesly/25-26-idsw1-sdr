@@ -11,7 +11,7 @@
 
 <div align="center">
 
-| [![Diagrama de clases](./DiagramaDeClases/diagramaDeClases.svg)](./DiagramaDeClases/diagramaDeClases.svg) |
+| [![Diagrama de clases](./DiagramaDeClases/diagramaDeClases.svg)](./DiagramaDeClases/diagramaDeClases.png) |
 |:-:|
 | [Código fuente](./DiagramaDeClases/diagramaDeClases.puml) |
 
