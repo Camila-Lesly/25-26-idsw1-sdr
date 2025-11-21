@@ -32,7 +32,7 @@ En este apartado se describe la estructura lógica del sistema y las relaciones 
 
 **Diagramas disponibles:**  
 - [Diagramas de Clases](./documentos/00-modeloDeDominio/DiagramaDeClases/diagramaDeClases.png)  
-- [Diagramas de Estados](./documentos/modeloDeDominio/DiagramaDeEstados/diagramaDeEstados.svg)  
+- [Diagramas de Estados](/documentos/00-modeloDeDominio/DiagramaDeEstados/)  
 - [Diagramas de Objetos](./documentos/modeloDeDominio/DiagramaDeObjetos/)  
 
 ## **Casos de Uso**

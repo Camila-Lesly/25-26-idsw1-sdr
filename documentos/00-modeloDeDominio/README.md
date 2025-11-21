@@ -29,22 +29,22 @@
 |:-:|
 | [Código fuente](./DiagramaDeEstados/DdEEspacio/diagramaDeEstados.puml) |
 
-### Usuario
+### Visitante
 
-| [![Diagrama de estados de usuario](./DiagramaDeEstados/DdEUsuario/diagramaDeEstados.svg)](./DiagramaDeEstados/DdEUsuario/diagramaDeEstados.svg) |
+| [![Diagrama de estados de visitante](/documentos/00-modeloDeDominio/DiagramaDeEstados/DdEVisitante/diagramaDeEstados.svg)](./DiagramaDeEstados/DdEUsuario/diagramaDeEstados.svg) |
 |:-:|
-| [Código fuente](./DiagramaDeEstados/DdEUsuario/diagramaDeEstados.puml) |
+| [Código fuente](/documentos/00-modeloDeDominio/DiagramaDeEstados/DdEVisitante/diagramaDeEstados.puml) |
+
+</div>
+
+### Recorrido
+
+| [![Diagrama de estados de usuario](./DiagramaDeEstados/DdEspacioRecorrido/diagramaDeEstado.png)](./DiagramaDeEstados/DdEspacioRecorrido/diagramaDeEstado.png) |
+|:-:|
+| [Código fuente](/documentos/00-modeloDeDominio/DiagramaDeEstados/DdEspacioRecorrido/diagramaDeEstado.uml) |
 
 </div>
 
 ---
 
-## Diagrama de Objetos
 
-<div align="center">
-
-| [![Diagrama de objetos](./DiagramaDeObjetos/diagramaDeObjetos.svg)](./DiagramaDeObjetos/diagramaDeObjetos.svg) |
-|:-:|
-| [Código fuente](./DiagramaDeObjetos/diagramaDeObjetos.puml) |
-
-</div>
