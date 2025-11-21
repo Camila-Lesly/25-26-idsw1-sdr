@@ -1,0 +1,15 @@
+@startuml
+
+[*] --> Bloqueado
+[*] --> Disponible
+
+state Bloqueado
+Bloqueado : Visualización restringida / No interactuable.
+
+state Disponible
+Disponible : Visualización habilitada / Interactuable.
+
+Bloqueado --> Disponible : habilitarDisponibilidad()
+Disponible --> Bloqueado : deshabilitarDisponibilidad()
+
+@enduml

@@ -31,9 +31,9 @@ Crear una aplicación móvil con un mapa 3D interactivo del campus para que estu
 En este apartado se describe la estructura lógica del sistema y las relaciones entre sus componentes principales.  
 
 **Diagramas disponibles:**  
-- [Diagramas de Clases](/documentos/00-modeloDeDominio/DiagramaDeClases/diagramaDeClases.svg)  
-- [Diagramas de Estados](/documentos/00-modeloDeDominio/DiagramaDeEstados/diagramaDeEstados.svg)  
-- [Diagramas de Objetos](/documentos/00-modeloDeDominio/DiagramaDeObjetos/diagramaDeObjetos.svg)  
+- [Diagramas de Clases](./documentos/00-modeloDeDominio/DiagramaDeClases/diagramaDeClases.png)  
+- [Diagramas de Estados](/documentos/00-modeloDeDominio/DiagramaDeEstados/)  
+- [Diagramas de Objetos](./documentos/modeloDeDominio/DiagramaDeObjetos/)  
 
 ## **Casos de Uso**
 
@@ -41,7 +41,7 @@ Se listan los actores del sistema y los casos de uso asociados.
 Cada caso de uso puede incluir su descripción, flujo principal, excepciones y prototipo asociado.
 
 **Secciones disponibles:**  
-- [Actores](/Casos_de_Uso/Actores/)  
+- [Actores](/documentos/01-casoDeUso/0-Actores/README.md)  
 - [Casos de Uso Detallados](/Casos_de_Uso/Casos_de_Uso/)  
 - [Diagrama de Casos de Uso](/Casos_de_Uso/Diagrama_de_Casos_de_Uso/)  
 - [Diagrama de Contexto](/Casos_de_Uso/Contexto/)  
