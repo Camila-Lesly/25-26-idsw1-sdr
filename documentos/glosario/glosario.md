@@ -7,39 +7,18 @@
 
 # Glosario del Sistema de Mapa Interactivo Universitario
 
-## Modelo de Dominio - Conceptos Fundamentales
+Breve glosario unificado de términos y conceptos usados en `myUniverse` (mapa 3D del campus). La tabla recoge definición y ejemplos/características clave para cada término.
 
----
-
-### 1. Area
-
-Entidad espacial física o lógica dentro del campus. Comprende tanto espacios individuales como sus agrupaciones jerárquicas (plantas, edificios, zonas).
-
-**Ejemplos:** Aula, cafetería, oficina administrativa, planta de edificio, instalación deportiva, estacionamiento.
-
----
-
-### 2. MetaDatos
-
-Información asociada al sistema en cualquier formato. Incluye descripciones textuales, valores numéricos, metadata y cualquier contenido informativo vinculado a entidades del dominio.
-
-**Ejemplos:** Nombre de ubicación, horario de servicio, descripción de funcionalidad, restricciones de acceso, tipo de espacio.
-
----
-
-### 3. Vista
-
-Representación visual o sensorial del sistema. Define cómo se presenta la información al usuario a través de diferentes medios y formatos de visualización.
-
-**Ejemplos:** Mapa 3D interactivo, plano 2D, tour virtual 360 grados, descripción por audio, fotografía panorámica.
-
----
-
-### 4. Ajuste
-
-Parámetro configurable que personaliza la experiencia del usuario. Permite adaptar el sistema según necesidades, preferencias o características específicas del usuario.
-
-**Ejemplos:** Selección de idioma, modo de accesibilidad, preferencias de visualización, configuración de navegación por audio.
-
----
-
+|Término|Definición|Ejemplos / Características|
+|--|--|--|
+|Área|Entidad espacial física o lógica dentro del campus; puede agrupar otros espacios.|Aula, cafetería, planta de edificio, instalación deportiva, estacionamiento.
+|Metadatos|Información asociada a una entidad que describe y contextualiza su uso.|Nombre, horario, restricciones de acceso, capacidad, etiquetas.
+|Vista|Modo de representación de la información al usuario.|Mapa 3D interactivo, plano 2D, tour 360°, descripción por audio.
+|Ajuste|Parámetro personalizable que modifica la experiencia de usuario.|Idioma, modo accesibilidad, preferencias de visualización, filtro de capas.
+|Campus|Contenedor principal que agrupa edificios, sectores y áreas.|Límites geográficos, capas, configuración global.
+|Edificio|Estructura física que contiene aulas, servicios y espacios.|Nombre, coordenadas, plantas, accesos, tipo de edificio.
+|Aula|Espacio destinado a actividades académicas o formativas.|Capacidad, recursos (proyector, pizarra), disponibilidad horaria, identificador.
+|PuntoDeInteres (POI)|Lugar destacado para usuarios con información relevante.|Estatua, entrada, parada de bus, cafetería; categoría y coordenadas.
+|Visitante|Persona que interactúa con la aplicación.|Estudiante, visitante, personal; roles, permisos y preferencias.
+|Recorrido|Trayecto calculado entre dos puntos del campus para navegación.|Distancia, duración estimada, accesibilidad (rampas, ascensores), puntos intermedios.
+|Espacio|Unidad física o lógica dentro de un edificio o exterior (aula, pasillo, sala).|Identificador, planta, coordenadas, tipo interior/exterior.
