@@ -1,5 +1,34 @@
 @startuml
 
+object "uneatlantico : Campus" as uneatlantico {
+    nombre = "Univerdad Europea del Atlántico"
+    direccion = "Calle Isabel Torres, 21, 39011 Santander, España"
+}
+
+object "edificioPrincipal : Edificio" as edificioPrincipal {
+    nombre = "Centro de estudios universitarios"
+    area = 2000
+    numPlantas = 7
+    cerramiento = true
+}
+
+object "exterior : Edificio" as exterior {
+    nombre = "Zona exterior principal"
+    area = 5000
+    cerramiento = False
+    numPlantas = 1
+}
+
+object "sotano3 : Planta" as sotano3 {
+    numero = -3
+    descripcion = "Sótano 3"
+}
+
+object "planta0 : Planta" as planta0 {
+    numero = 0
+    descripcion = "Planta Baja"
+}
+
 object "firibicundio : Visitante" as firibicundio {
     nombre = "firibicundio"
 }
@@ -20,7 +49,7 @@ object "ORI : Espacio" as ORI {
     descripcion = "Oficina de Relaciones Internacionales"
 }
 
-object "parkingA : Espacio" as parkingA {
+object "parkingA : Parking" as parkingA {
     nombre = "Parking A"
     tipo = "Parking"
     capacidad = 30
@@ -28,7 +57,7 @@ object "parkingA : Espacio" as parkingA {
     descripcion = "Automóviles"
 }
 
-object "parkingB : Espacio" as parkingB {
+object "parkingB : Parking" as parkingB {
     nombre = "Parking B"
     tipo = "Parking"
     capacidad = 30
@@ -36,7 +65,7 @@ object "parkingB : Espacio" as parkingB {
     descripcion = "Automóviles"
 }
 
-object "parkingSotano : Espacio" as parkingSotano {
+object "parkingSotano : Parking" as parkingSotano {
     nombre = "Parking Sótano"
     tipo = "Parking"
     capacidad = 100
@@ -66,31 +95,6 @@ object "areaVerde1 : Espacio" as areaVerde1 {
     capacidad = null
     ptoInteres = true
     descripcion = "Césped sintético — Punto de encuentro"
-}
-
-object "uneatlantico : Campus" as uneatlantico {
-    nombre = "Univerdad Europea del Atlántico"
-    direccion = "Calle Isabel Torres, 21, 39011 Santander, España"
-}
-
-object "exterior : Exterior" as exterior {
-    nombre = "Zona exterior edificioPrincipal"
-    area = 5000
-}
-
-object "edificioPrincipal : Edificio" as edificioPrincipal {
-    nombre = "Centro de estudios universitarios"
-    numPlantas = 7
-}
-
-object "sotano3 : Planta" as sotano3 {
-    numero = -3
-    descripcion = "Sótano 3"
-}
-
-object "planta0 : Planta" as planta0 {
-    numero = 0
-    descripcion = "Planta Baja"
 }
 
 firibicundio -right- ORI

@@ -51,8 +51,6 @@ La aplicación busca ayudar a estudiantes y visitantes a orientarse y acceder a 
 
 </div>
 
----
-
 ## Diagrama de Estados
 
 <div align="center">
@@ -65,20 +63,24 @@ La aplicación busca ayudar a estudiantes y visitantes a orientarse y acceder a 
 
 ### Visitante
 
-| [![Diagrama de estados de visitante](/documentos/00-modeloDeDominio/DiagramaDeEstados/DdEVisitante/diagramaDeEstados.svg)](./DiagramaDeEstados/DdEUsuario/diagramaDeEstados.svg) |
+| [![Diagrama de estados de visitante](./DiagramaDeEstados/DdEVisitante/diagramaDeEstados.svg)](./DiagramaDeEstados/DdEVisitante/diagramaDeEstados.png) |
 |:-:|
-| [Código fuente](/documentos/00-modeloDeDominio/DiagramaDeEstados/DdEVisitante/diagramaDeEstados.puml) |
-
-</div>
+| [Código fuente](./DiagramaDeEstados/DdEVisitante/diagramaDeEstados.puml) |
 
 ### Recorrido
 
-| [![Diagrama de estados de usuario](./DiagramaDeEstados/DdEspacioRecorrido/diagramaDeEstado.png)](./DiagramaDeEstados/DdEspacioRecorrido/diagramaDeEstado.png) |
+| [![Diagrama de estados de recorrido](./DiagramaDeEstados/DdEspacioRecorrido/diagramaDeEstado.png)](./DiagramaDeEstados/DdEspacioRecorrido/diagramaDeEstado.png) |
 |:-:|
-| [Código fuente](/documentos/00-modeloDeDominio/DiagramaDeEstados/DdEspacioRecorrido/diagramaDeEstado.uml) |
+| [Código fuente](./DiagramaDeEstados/DdEspacioRecorrido/diagramaDeEstado.uml) |
 
 </div>
 
----
+## Diagrama de Objetos
 
+<div align="center">
 
+| [![Diagrama de objetos](./DiagramaDeObjetos/diagramaDeObjetos.png)](./DiagramaDeObjetos/diagramaDeObjetos.png) |
+|:-:|
+| [Código fuente](./DiagramaDeObjetos/diagramaDeObjetos.uml) |
+
+</div>
