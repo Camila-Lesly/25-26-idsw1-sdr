@@ -1,15 +1,10 @@
 @startuml
 
-[*] --> Bloqueado
 [*] --> Disponible
-
-state Bloqueado
-Bloqueado : Visualización restringida / No interactuable.
 
 state Disponible
 Disponible : Visualización habilitada / Interactuable.
 
-Bloqueado --> Disponible : habilitarDisponibilidad()
-Disponible --> Bloqueado : deshabilitarDisponibilidad()
-
+Disponible --> Disponible : recorrer()
+Disponible --> [*] : salirDeRecorrido()
 @enduml
