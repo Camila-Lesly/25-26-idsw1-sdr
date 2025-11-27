@@ -1,0 +1,32 @@
+@startuml
+
+left to right direction
+
+actor "Visitante" as visitante
+
+usecase consultarMapa as "consultarMapa()"
+
+package "Ubicación"{
+    usecase buscarUbicacion as "buscarUbicacion()"
+    usecase verDetallesUbicación as "verDetallesUbicacion()"
+    usecase verUbicacionesCercanas as "verUbicacionesCercanas()"
+    usecase verUbicacionesPlanta as "verUbicacionesPlanta()"
+}
+
+package "Recorrido"{
+    usecase generarRecorrido as "generarRecorrido()"
+    usecase verRecorridosDisponibles as "verRecorridosDisponibles()"
+    usecase seguirRecorrido as "seguirRecorrido()"
+}
+
+visitante -up-> (consultarMapa)
+
+visitante --> (buscarUbicacion)
+visitante --> (verDetallesUbicación)
+visitante --> (verUbicacionesCercanas)
+visitante --> (verUbicacionesPlanta)
+
+(generarRecorrido) <-- visitante
+(verRecorridosDisponibles) <-- visitante
+(seguirRecorrido) <-- visitante
+@enduml
