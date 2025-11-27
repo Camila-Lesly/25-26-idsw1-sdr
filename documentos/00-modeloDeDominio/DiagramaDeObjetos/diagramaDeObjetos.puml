@@ -1,7 +1,7 @@
 @startuml
 left to right direction
 
-object "uneatlantico : Campus" as uneatlantico {
+object "uneatlantico : Universidad" as uneatlantico {
     nombre = "Univerdad Europea del Atlántico"
     direccion = "
     Calle Isabel Torres, 21, 39011 Santander, España"
@@ -67,7 +67,7 @@ object "parkingSotano : Parking" as parkingSotano {
     ptoInteres: true
 }
 
-object "exterior : Exterior" as exterior {
+object "exterior : Edificio" as exterior {
     nombre = "Zona exterior edificioPrincipal"
     area = 5000
 }
@@ -90,7 +90,7 @@ object "pabellon : AreaDeportiva" as pabellon {
     deporte = "Múltiple"
     ptoInteres = true
 }
-object "pablo : Visitante" as visitante{
+object "Pablo : Visitante" as visitante{
   
 }
 map "TourEspacios : Recorrido" as recorrido {
