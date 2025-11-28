@@ -9,16 +9,7 @@ object "uneatlantico : Universidad" as uneatlantico {
 
 object "edificioPrincipal : Edificio" as edificioPrincipal {
     nombre = "Centro de estudios universitarios"
-    area = 2000
     numPlantas = 7
-    cerramiento = true
-}
-
-object "exterior : Edificio" as exterior {
-    nombre = "Zona exterior principal"
-    area = 5000
-    cerramiento = False
-    numPlantas = 1
 }
 
 object "sotano3 : Planta" as sotano3 {
@@ -29,10 +20,6 @@ object "sotano3 : Planta" as sotano3 {
 object "planta0 : Planta" as planta0 {
     numero = 0
     descripcion = "Planta Baja"
-}
-
-object "firibicundio : Visitante" as firibicundio {
-    nombre = "firibicundio"
 }
 
 object "aula1 : Espacio" as aula1 {
@@ -54,20 +41,15 @@ object "ORI : Espacio" as ORI {
     ptoInteres: true
 }
 
-object "parkingA : Parking" as parkingA {
-    nombre = "Parking A"
-    tipo = "Parking"
-    capacidad = 30
-    ptoInteres = true
-    descripcion = "Automóviles"
+object "Planta -2 : Planta" as planta_2{
+    numero = -2
 }
 object "Pasillo -2 : Pasillo" as pasillo_2
 object "Pasillo 0 : Pasillo" as pasillo0
 
-object "parkingB : Parking" as parkingB {
-    nombre = "Parking B"
-    tipo = "Parking"
-    capacidad = 30
+object "Cafeteria : Espacio" as cafeteria{
+    nombre = "cafetería"
+    capacidad = 40
     ptoInteres = true
 }
 object "aula6 : Espacio" as aula6{
@@ -77,9 +59,9 @@ object "aula6 : Espacio" as aula6{
     ptoInteres: true
 }
 
+
 object "parkingSotano : Parking" as parkingSotano {
-    nombre = "Parking Sótano"
-    tipo = "Parking"
+    nombre = "Estacionamiento Sotano"
     capacidad = 100
     tipoVehiculo = "Automóviles"
     ptoInteres: true
@@ -103,7 +85,33 @@ object "canchaPadel1 : AreaDeportiva" as canchaPadel1 {
     ptoInteres = true
 }
 
-firibicundio -right- ORI
+object "pabellon : AreaDeportiva" as pabellon {
+    nombre = "Pabellón Deportivo"
+    deporte = "Múltiple"
+    ptoInteres = true
+}
+object "Pablo : Visitante" as visitante{
+
+}
+map "TourEspacios : Recorrido" as recorrido {
+ 1 => Entrada
+ 2 => Pasillo 0
+ 3 => Aula 0.1
+ 4 => Pasillo 0
+ 5 => Pasillo -2
+ 6 => Cafetería
+ 7 => Pasillo -2
+ 8 => Pasillo 0
+ 9 => Entrada
+ 10 => Pabellón
+}
+
+uneatlantico *-- edificioPrincipal
+uneatlantico *-- exterior
+
+edificioPrincipal *-- sotano3
+edificioPrincipal *-- planta0
+edificioPrincipal *-- planta_2
 
 planta0 *-- aula1
 planta0 *-- ORI
