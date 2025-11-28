@@ -1,0 +1,38 @@
+@startuml diagrama-contexto-visitante
+left to right direction
+skinparam linetype polyline
+
+state "SESION_CERRADA" as NoAuth
+state "UNIVERSIDAD_DISPONIBLE" as Universidad
+state "RECORRIDOS_ABIERTOS" as ListRecorridos
+state "RECORRIDO_ABIERTO" as Recorrido
+state "UBICACION_ABIERTA" as Ubicacion
+
+
+[*] --> NoAuth
+
+' --- Inicio y salida ---
+NoAuth --> Universidad : iniciarVisita()
+Universidad --> NoAuth : salir()
+
+' --- Recorridos disponibles ---
+Universidad --> ListRecorridos : listarRecorridos()
+ListRecorridos --> Universidad : abrirUniversidad()
+
+' --- Seleccionar recorrido ---
+ListRecorridos --> Recorrido : seleccionarRecorrido()
+Recorrido --> ListRecorridos : abrirRecorridos()
+
+' --- Acciones sobre ubicación ---
+Recorrido --> Ubicacion : buscarUbicacion()
+Recorrido --> Ubicacion : verDetallesUbicacion()
+Recorrido --> Ubicacion : verUbicacionesCercanas()
+Recorrido --> Ubicacion : verUbicacionesPlanta()
+
+Ubicacion --> Ubicacion : verDetallesUbicacion()
+Ubicacion --> Ubicacion : verUbicacionesCercanas()
+Ubicacion --> Ubicacion : verUbicacionesPlanta()
+
+Ubicacion --> Recorrido :abrirRecorrido()
+
+@enduml
