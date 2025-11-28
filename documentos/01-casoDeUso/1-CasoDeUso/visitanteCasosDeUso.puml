@@ -4,9 +4,9 @@ left to right direction
 
 actor "Visitante" as visitante
 
-usecase consultarMapa as "consultarMapa()"
-
 package "Gestión de Ubicación"{
+    usecase verUbicacionActual as "verUbicacionActual()"
+    usecase cambiarDeUbicacion as "cambiarDeUbicacion()"
     usecase buscarUbicacion as "buscarUbicacion()"
     usecase verDetallesUbicación as "verDetallesUbicacion()"
     usecase verUbicacionesCercanas as "verUbicacionesCercanas()"
@@ -19,8 +19,8 @@ package "Gestión de Recorrido"{
     usecase seleccionarRecorrido as "seleccionarRecorrido()"
 }
 
-visitante -up-> (consultarMapa)
-
+visitante --> (verUbicacionActual)
+visitante --> (cambiarDeUbicacion)
 visitante --> (buscarUbicacion)
 visitante --> (verDetallesUbicación)
 visitante --> (verUbicacionesCercanas)
