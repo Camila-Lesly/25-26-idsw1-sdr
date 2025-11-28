@@ -1,15 +1,39 @@
 @startuml
 left to right direction
 
-object "uneatlantico : Campus" as uneatlantico {
+object "uneatlantico : Universidad" as uneatlantico {
     nombre = "Univerdad Europea del Atlántico"
-    direccion = "
-    Calle Isabel Torres, 21, 39011 Santander, España"
+    direccion = "Calle Isabel Torres, 21, 39011 Santander, España"
 }
 
 object "edificioPrincipal : Edificio" as edificioPrincipal {
     nombre = "Centro de estudios universitarios"
+<<<<<<< HEAD
+    cerramiento = true
     numPlantas = 7
+    area = 2000
+=======
+    numPlantas = 7
+>>>>>>> 60a2239b21f7884fee73d8855747935dcbf5f8a1
+}
+
+<<<<<<< HEAD
+=======
+object "sotano3 : Planta" as sotano3 {
+    numero = -3
+    descripcion = "Sótano 3"
+}
+
+>>>>>>> 60a2239b21f7884fee73d8855747935dcbf5f8a1
+object "planta0 : Planta" as planta0 {
+    numero = 0
+    descripcion = "Planta Baja"
+}
+
+<<<<<<< HEAD
+object "sotano2 : Planta" as sotano2{
+    numero = -2
+    descripcion = "Sótano 2"
 }
 
 object "sotano3 : Planta" as sotano3 {
@@ -17,81 +41,136 @@ object "sotano3 : Planta" as sotano3 {
     descripcion = "Sótano 3"
 }
 
-object "planta0 : Planta" as planta0 {
-    numero = 0
-    descripcion = "Planta Baja"
-}
-
+=======
+>>>>>>> 60a2239b21f7884fee73d8855747935dcbf5f8a1
 object "aula1 : Espacio" as aula1 {
     nombre = "Aula 0.1"
-    tipo = "Aula"
+    ptoInteres = false
+    descripción = "Aula"
     capacidad = 40
-    ptoInteres: false
 }
 
-object "entrada : Espacio" as entrada{
-    nombre = "Entrada a la universidad"
-    ptoInteres: true
+object "aulaInformatica1 : Espacio" as aulaInformatica1{
+    nombre = "Aula -2.6"
+    ptoInteres = true
+    descripcion = "Laboratorio de informática"
+    capacidad = 40
 }
 
 object "ORI : Espacio" as ORI {
     nombre = "ORI"
-    tipo = "oficina"
+    ptoInteres = true
+    descripción = "Oficina de Relaciones Internacionales"
     capacidad = 7
-    ptoInteres: true
 }
 
+<<<<<<< HEAD
+object "cafeteria : Espacio" as cafeteria{
+    nombre = "Cafetería"
+    ptoInteres = true
+    descripcion = "Cafetería 100CIA"
+    capacidad = 40
+=======
 object "Planta -2 : Planta" as planta_2{
     numero = -2
+>>>>>>> 60a2239b21f7884fee73d8855747935dcbf5f8a1
 }
-object "Pasillo -2 : Pasillo" as pasillo_2
-object "Pasillo 0 : Pasillo" as pasillo0
 
+<<<<<<< HEAD
+object "pasillo2 : Pasillo" as pasilloS2
+
+object "pasillo0 : Pasillo" as pasillo0
+
+
+object "entradaPrincipal : Entrada" as entradaPrincipal{
+    nombre = "Entrada a la universidad"
+=======
 object "Cafeteria : Espacio" as cafeteria{
     nombre = "cafetería"
     capacidad = 40
+>>>>>>> 60a2239b21f7884fee73d8855747935dcbf5f8a1
     ptoInteres = true
-}
-object "aula6 : Espacio" as aula6{
-    nombre = "Aula -2.6"
-    tipo = "Laboratorio de informática"
-    capacidad = 40
-    ptoInteres: true
 }
 
 
 object "parkingSotano : Parking" as parkingSotano {
+<<<<<<< HEAD
+    nombre = "Estacionamiento Sotano"
+    ptoInteres = true
+=======
     nombre = "Estacionamiento Sotano"
     capacidad = 100
+>>>>>>> 60a2239b21f7884fee73d8855747935dcbf5f8a1
     tipoVehiculo = "Automóviles"
-    ptoInteres: true
+    capacidad = 100
 }
 
-object "exterior : Exterior" as exterior {
-    nombre = "Zona exterior edificioPrincipal"
+object "exterior : Edificio" as exterior {
+    nombre = "Zona exterior principal"
+    cerramiento = false
+    numPlantas = 1
     area = 5000
 }
 
-object "areaVerde1 : Verde" as areaVerde1 {
+object "plantaExterior0 : Planta" as plantaE0 {
+    numero = 0
+    descripcion = "Planta baja exterior"
+}
+
+object "areaVerde1 : Espacio" as areaVerde1 {
     nombre = "Área Verde 1
-    superficie = "Césped sintético"
+    ptoInteres = true
     descripcion = "Punto de encuentro"
-    ptoInteres = true
+    capacidad = 150
 }
 
-object "canchaPadel1 : AreaDeportiva" as canchaPadel1 {
-    nombre = "Cancha de Padel"
-    deporte = "Padel"
+object "canchaPadel1 : Espacio" as canchaPadel1 {
+    nombre = "Cancha de Padel 1"
     ptoInteres = true
+    descripcion = "Cancha de práctica"
+    capacidad = 4
 }
 
+object "pabellon : Espacio" as pabellon {
+    nombre = "Pabellón Deportivo"
+    ptoInteres = true
+    descripcion = "Pabellón multideportivo"
+    capacidad = 60
+}
+
+<<<<<<< HEAD
+object "Pablo : Visitante" as visitante
+=======
 object "pabellon : AreaDeportiva" as pabellon {
     nombre = "Pabellón Deportivo"
     deporte = "Múltiple"
     ptoInteres = true
 }
-object "pablo : Visitante" as visitante{
-  
+object "Pablo : Visitante" as visitante{
+>>>>>>> 60a2239b21f7884fee73d8855747935dcbf5f8a1
+
+<<<<<<< HEAD
+map "tourEspacios : Recorrido" as recorrido {
+ 1 => Entrada Principal
+ 2 => Pasillo 0
+ 3 => Aula 0.1
+ 4 => Pasillo 0
+ 5 => Pasillo -2
+ 6 => Cafetería
+ 7 => Pasillo -2
+ 8 => Pasillo 0
+ 9 => Entrada Principal
+ 10 => Pabellón
+}
+
+uneatlantico *-- edificioPrincipal
+uneatlantico *-- exterior
+
+edificioPrincipal *-- sotano3
+edificioPrincipal *-- planta0
+edificioPrincipal *-- sotano2
+
+=======
 }
 map "TourEspacios : Recorrido" as recorrido {
  1 => Entrada
@@ -106,7 +185,6 @@ map "TourEspacios : Recorrido" as recorrido {
  10 => Pabellón
 }
 
-
 uneatlantico *-- edificioPrincipal
 uneatlantico *-- exterior
 
@@ -114,28 +192,30 @@ edificioPrincipal *-- sotano3
 edificioPrincipal *-- planta0
 edificioPrincipal *-- planta_2
 
+>>>>>>> 60a2239b21f7884fee73d8855747935dcbf5f8a1
 planta0 *-- aula1
 planta0 *-- ORI
-planta0 *-- entrada
+planta0 *-- entradaPrincipal
 planta0 *-- pasillo0
-sotano3 o-- parkingSotano
+sotano3 *-- parkingSotano
 
 
-planta_2 *-- cafeteria
-planta_2 *-- aula6
-planta_2 *-- pasillo_2
+sotano2 *-- cafeteria
+sotano2 *-- aulaInformatica1
+sotano2 *-- pasilloS2
 
+exterior *-- plantaE0
 
-exterior *-- areaVerde1
-exterior *-- canchaPadel1
-exterior *-- pabellon
+plantaE0 *-- areaVerde1
+plantaE0 *-- canchaPadel1
+plantaE0 *-- pabellon
 
 visitante --> recorrido
-recorrido::1 --o entrada
-recorrido::2 --o pasillo0
-recorrido::3 --o aula1
-recorrido::5 --o pasillo_2
-recorrido::6 --o cafeteria
-recorrido::10 --o pabellon
+recorrido::1 o-- entradaPrincipal
+recorrido::2 o-- pasillo0
+recorrido::3 o-- aula1
+recorrido::5 o-- pasilloS2
+recorrido::6 o-- cafeteria
+recorrido::10 o-- pabellon
 
 @enduml

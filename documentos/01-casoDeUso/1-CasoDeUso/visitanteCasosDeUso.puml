@@ -6,17 +6,17 @@ actor "Visitante" as visitante
 
 usecase consultarMapa as "consultarMapa()"
 
-package "Ubicación"{
+package "Gestión de Ubicación"{
     usecase buscarUbicacion as "buscarUbicacion()"
     usecase verDetallesUbicación as "verDetallesUbicacion()"
     usecase verUbicacionesCercanas as "verUbicacionesCercanas()"
     usecase verUbicacionesPlanta as "verUbicacionesPlanta()"
 }
 
-package "Recorrido"{
-    usecase generarRecorrido as "generarRecorrido()"
+package "Gestión de Recorrido"{
     usecase verRecorridosDisponibles as "verRecorridosDisponibles()"
-    usecase seguirRecorrido as "seguirRecorrido()"
+    usecase salirrRecorrido as "salirRecorrido()"
+    usecase seleccionarRecorrido as "seleccionarRecorrido()"
 }
 
 visitante -up-> (consultarMapa)
@@ -26,7 +26,7 @@ visitante --> (verDetallesUbicación)
 visitante --> (verUbicacionesCercanas)
 visitante --> (verUbicacionesPlanta)
 
-(generarRecorrido) <-- visitante
+(seleccionarRecorrido) <-- visitante
 (verRecorridosDisponibles) <-- visitante
-(seguirRecorrido) <-- visitante
+(salirrRecorrido) <-- visitante
 @enduml

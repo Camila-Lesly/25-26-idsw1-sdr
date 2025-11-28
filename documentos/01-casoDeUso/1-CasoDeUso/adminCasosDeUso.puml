@@ -10,41 +10,12 @@ package "Gestión de Ubicaciones"{
     usecase eliminarUbicacion as "eliminarUbicacion()"
     usecase actualizarUbicacion as "actualizarUbicacion()"
 }
-package "Gestión de relaciones"{
-    usecase crearRelacion as "crearRelacion()"
-    usecase verRelaciones as "verRelaciones()"
-    usecase eliminarRelacion as "eliminarRelacion()"
-    usecase actualizarRelacion as "actualizarRelacion()"
-}
 
 package "Gestión de Recorridos"{
     usecase crearRecorrido as "crearRecorrido()"
     usecase verRecorridos as "verRecorridos()"
     usecase eliminarRecorrido as "eliminarRecorrido()"
     usecase actualizarRecorrido as "actualizarRecorrido()"
-    usecase añadirUbicacionRecorrido as "añadirUbicacionRecorrido()"
-}
-
-package "Gestión de Univerdidad"{
-    usecase crearUniversidad as "crearUniversidad()"
-    usecase verUniversidades as "verUniversidades()"
-    usecase eliminarUniversidad as "eliminarUniversidad()"
-    usecase actualizarUniversidad as "actualizarUniversidad()"
-
-    usecase crearExterior as "crearExterior()"
-    usecase verExteriores as "verExteriores()"
-    usecase eliminarExterior as "eliminarExterior()"
-    usecase actualizarExterior as "actualizarExterior()"
-
-    usecase crearEdificio as "crearEdificio()"
-    usecase verEdificios as "verEdificios()"
-    usecase eliminarEdificio as "eliminarEdificio()"
-    usecase actualizarEdificio as "actualizarEdificio()"
-
-    usecase crearPlanta as "crearPlanta()"
-    usecase verPlantas as "verPlantas()"
-    usecase eliminarPlanta as "eliminarPlanta()"
-    usecase actualizarPlanta as "actualizarPlanta()"
 }
 
 (crearUbicacion) <-- admin
@@ -52,32 +23,11 @@ package "Gestión de Univerdidad"{
 (eliminarUbicacion) <-- admin
 (actualizarUbicacion) <-- admin
 
-(crearRelacion) <-- admin
-(verRelaciones) <-- admin
-(eliminarRelacion) <-- admin
-(actualizarRelacion) <-- admin
-
 (crearRecorrido) <-- admin
 (verRecorridos) <-- admin
 (eliminarRecorrido) <-- admin
 (actualizarRecorrido) <-- admin
-(añadirUbicacionRecorrido) <-- admin
 
-admin --> (crearUniversidad)
-admin --> (verUniversidades)
-admin --> (eliminarUniversidad)
-admin --> (actualizarUniversidad)
-admin --> (crearExterior)
-admin --> (verExteriores)
-admin --> (eliminarExterior)
-admin --> (actualizarExterior)
-admin --> (crearEdificio)
-admin --> (verEdificios)
-admin --> (eliminarEdificio)
-admin --> (actualizarEdificio)
-admin --> (crearPlanta)
-admin --> (verPlantas)
-admin --> (eliminarPlanta)
-admin --> (actualizarPlanta)
+
 
 @enduml
