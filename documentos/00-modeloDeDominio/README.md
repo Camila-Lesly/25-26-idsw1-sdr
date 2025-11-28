@@ -63,7 +63,7 @@ La aplicación busca ayudar a estudiantes y visitantes a orientarse y acceder a 
 
 ### Visitante
 
-| [![Diagrama de estados de visitante](./DiagramaDeEstados/DdEVisitante/diagramaDeEstados.svg)](./DiagramaDeEstados/DdEVisitante/diagramaDeEstados.png) |
+| [![Diagrama de estados de visitante](/documentos/00-modeloDeDominio/DiagramaDeEstados/DdEVisitante/diagramaDeEstados.png)](./DiagramaDeEstados/DdEVisitante/diagramaDeEstados.png) |
 |:-:|
 | [Código fuente](./DiagramaDeEstados/DdEVisitante/diagramaDeEstados.puml) |
 
@@ -77,16 +77,6 @@ La aplicación busca ayudar a estudiantes y visitantes a orientarse y acceder a 
 
 ---
 ## Diagrama de Objetos
-
-<div align="center">
-
-|![Diagrama de objetos](./DiagramaDeObjetos/diagramaDeObjetos.svg)|
-|:-:|
-|[Codigo fuente](./DiagramaDeObjetos/diagramaDeObjetos.puml)|
-
-</div>
-
----
 
 <div align="center">
 
