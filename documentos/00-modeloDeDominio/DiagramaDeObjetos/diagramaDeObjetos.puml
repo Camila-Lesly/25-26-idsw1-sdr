@@ -1,8 +1,10 @@
 @startuml
+left to right direction
 
-object "uneatlantico : Campus" as uneatlantico {
+object "uneatlantico : Universidad" as uneatlantico {
     nombre = "Univerdad Europea del Atlántico"
-    direccion = "Calle Isabel Torres, 21, 39011 Santander, España"
+    direccion = "
+    Calle Isabel Torres, 21, 39011 Santander, España"
 }
 
 object "edificioPrincipal : Edificio" as edificioPrincipal {
@@ -34,19 +36,22 @@ object "firibicundio : Visitante" as firibicundio {
 }
 
 object "aula1 : Espacio" as aula1 {
-    nombre = "Aula 1.1"
+    nombre = "Aula 0.1"
     tipo = "Aula"
     capacidad = 40
-    ptoInteres = true
-    descripcion = null
+    ptoInteres: false
+}
+
+object "entrada : Espacio" as entrada{
+    nombre = "Entrada a la universidad"
+    ptoInteres: true
 }
 
 object "ORI : Espacio" as ORI {
     nombre = "ORI"
-    tipo = "Oficina"
+    tipo = "oficina"
     capacidad = 7
-    ptoInteres = true
-    descripcion = "Oficina de Relaciones Internacionales"
+    ptoInteres: true
 }
 
 object "parkingA : Parking" as parkingA {
@@ -56,64 +61,72 @@ object "parkingA : Parking" as parkingA {
     ptoInteres = true
     descripcion = "Automóviles"
 }
+object "Pasillo -2 : Pasillo" as pasillo_2
+object "Pasillo 0 : Pasillo" as pasillo0
 
 object "parkingB : Parking" as parkingB {
     nombre = "Parking B"
     tipo = "Parking"
     capacidad = 30
     ptoInteres = true
-    descripcion = "Automóviles"
+}
+object "aula6 : Espacio" as aula6{
+    nombre = "Aula -2.6"
+    tipo = "Laboratorio de informática"
+    capacidad = 40
+    ptoInteres: true
 }
 
 object "parkingSotano : Parking" as parkingSotano {
     nombre = "Parking Sótano"
     tipo = "Parking"
     capacidad = 100
-    ptoInteres = true
-    descripcion = "Automóviles"
+    tipoVehiculo = "Automóviles"
+    ptoInteres: true
 }
 
-object "canchaPadel1 : Espacio" as canchaPadel1 {
+object "exterior : Edificio" as exterior {
+    nombre = "Zona exterior edificioPrincipal"
+    area = 5000
+}
+
+object "areaVerde1 : Verde" as areaVerde1 {
+    nombre = "Área Verde 1
+    superficie = "Césped sintético"
+    descripcion = "Punto de encuentro"
+    ptoInteres = true
+}
+
+object "canchaPadel1 : AreaDeportiva" as canchaPadel1 {
     nombre = "Cancha de Padel"
-    tipo = "Cancha"
-    capacidad = null
+    deporte = "Padel"
     ptoInteres = true
-    descripcion = "Padel"
-}
-
-object "pabellon : Espacio" as pabellon {
-    nombre = "Pabellón Deportivo"
-    tipo = "Cancha"
-    capacidad = null
-    ptoInteres = true
-    descripcion = "Múltiple"
-}
-
-object "areaVerde1 : Espacio" as areaVerde1 {
-    nombre = "Área Verde 1"
-    tipo = "Área Verde"
-    capacidad = null
-    ptoInteres = true
-    descripcion = "Césped sintético — Punto de encuentro"
 }
 
 firibicundio -right- ORI
 
-aula1 *-- uneatlantico
-ORI *-- uneatlantico
+planta0 *-- aula1
+planta0 *-- ORI
+planta0 *-- entrada
+planta0 *-- pasillo0
+sotano3 o-- parkingSotano
 
-parkingSotano *-- uneatlantico
-parkingA *-- uneatlantico
-parkingB *-- uneatlantico
 
-areaVerde1 *-- uneatlantico
-canchaPadel1 *-- uneatlantico
-pabellon *-- uneatlantico
+planta_2 *-- cafeteria
+planta_2 *-- aula6
+planta_2 *-- pasillo_2
 
-uneatlantico *-- edificioPrincipal
-uneatlantico *-- edificioPrincipal
 
-edificioPrincipal *-- sotano3
-edificioPrincipal *-- planta0
+exterior *-- areaVerde1
+exterior *-- canchaPadel1
+exterior *-- pabellon
+
+visitante --> recorrido
+recorrido::1 --o entrada
+recorrido::2 --o pasillo0
+recorrido::3 --o aula1
+recorrido::5 --o pasillo_2
+recorrido::6 --o cafeteria
+recorrido::10 --o pabellon
 
 @enduml
