@@ -1,14 +1,11 @@
 @startuml
+enum Tipo
 
-Visitante -->  Ubicación
+Universidad *-- Region
+Region *-- Planta
+Planta *-- Espacio
+Espacio -- Tipo
+
 Visitante --> Recorrido
-Recorrido o-- Ubicación
-Universidad  *-- Edificio
-Edificio *-- Planta
-Planta *-- Ubicación
-Espacio -up-|> Ubicación
-Pasillo -up-|> Ubicación
-Entrada -up-|> Ubicación
-Parking -up-|> Ubicación
-
+Recorrido --o Espacio
 @enduml

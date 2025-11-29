@@ -84,7 +84,7 @@ La aplicación busca ayudar a estudiantes y visitantes a orientarse y acceder a 
 
 <div align="center">
 
-|![Diagrama de objetos](./DiagramaDeObjetos/diagramaDeObjetos.svg)|
+|![Diagrama de objetos](./DiagramaDeObjetos/diagramaDeObjetos.png)|
 |:-:|
 |[Codigo fuente](./DiagramaDeObjetos/diagramaDeObjetos.puml)|
 
