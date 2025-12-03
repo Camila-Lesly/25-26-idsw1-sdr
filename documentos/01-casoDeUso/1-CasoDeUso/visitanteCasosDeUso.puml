@@ -4,13 +4,13 @@ left to right direction
 
 actor "Visitante" as visitante
 
-package "Gestión de Ubicación"{
-    usecase verUbicacionActual as "verUbicacionActual()"
-    usecase cambiarDeUbicacion as "cambiarDeUbicacion()"
-    usecase buscarUbicacion as "buscarUbicacion()"
-    usecase verDetallesUbicación as "verDetallesUbicacion()"
-    usecase verUbicacionesCercanas as "verUbicacionesCercanas()"
-    usecase verUbicacionesPlanta as "verUbicacionesPlanta()"
+package "Gestión de Espacio"{
+    usecase verEspacioActual as "verEspacioActual()"
+    usecase cambiarDeEspacio as "cambiarDeEspacio()"
+    usecase buscarEspacio as "buscarEspacio()"
+    usecase verDetallesEspacio as "verDetallesEspacio()"
+    usecase verEspaciosCercanos as "verEspaciosCercanos()"
+    usecase verEspaciosPlanta as "verEspaciosPlanta()"
 }
 
 package "Gestión de Recorrido"{
@@ -19,12 +19,12 @@ package "Gestión de Recorrido"{
     usecase seleccionarRecorrido as "seleccionarRecorrido()"
 }
 
-visitante --> (verUbicacionActual)
-visitante --> (cambiarDeUbicacion)
-visitante --> (buscarUbicacion)
-visitante --> (verDetallesUbicación)
-visitante --> (verUbicacionesCercanas)
-visitante --> (verUbicacionesPlanta)
+visitante --> (verEspacioActual)
+visitante --> (cambiarDeEspacio)
+visitante --> (buscarEspacio)
+visitante --> (verDetallesEspacio)
+visitante --> (verEspaciosCercanos)
+visitante --> (verEspaciosPlanta)
 
 (seleccionarRecorrido) <-- visitante
 (verRecorridosDisponibles) <-- visitante
