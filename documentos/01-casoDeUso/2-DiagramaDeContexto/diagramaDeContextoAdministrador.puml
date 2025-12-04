@@ -6,8 +6,8 @@ skinparam linetype polyline
 state "SESION_CERRADA" as NoAuth
 state "UNIVERSIDAD_DISPONIBLE" as Menu
 
-state "UBICACIONES_ABIERTO" as ListUbicaciones
-state "UBICACION_ABIERTO" as EditUbicacion
+state "ESPACIOS_ABIERTO" as ListEspacios
+state "ESPACIO_ABIERTO" as EditEspacio
 state "RECORRIDOS_ABIERTO" as ListRecorridos
 state "RECORRIDO_ABIERTO" as EditRecorrido
 
@@ -16,16 +16,16 @@ state "RECORRIDO_ABIERTO" as EditRecorrido
 NoAuth --> Menu : iniciarSesion()
 
 Menu --> NoAuth : cerrarSesion()
-Menu --> ListUbicaciones: abrirUbicaciones()
+Menu --> ListEspacios: abrirEspacios()
 Menu --> ListRecorridos: abrirRecorridos()
 
 
-ListUbicaciones --> EditUbicacion: crearUbicacion()
-ListUbicaciones --> EditUbicacion: editarUbicacion()
-ListUbicaciones --> ListUbicaciones: eliminarUbicacion()
+ListEspacios --> EditEspacio: crearEspacio()
+ListEspacios --> EditEspacio: editarEspacio()
+ListEspacios --> ListEspacios: eliminarEspacio()
 
-EditUbicacion --> EditUbicacion: editarUbicacion()
-EditUbicacion --> ListUbicaciones: abrirUbicaciones()
+EditEspacio --> EditEspacio: editarEspacio()
+EditEspacio --> ListEspacios: abrirEspacios()
 
 ListRecorridos --> EditRecorrido: crearRecorrido()
 ListRecorridos --> EditRecorrido: editarRecorrido()
@@ -35,7 +35,7 @@ EditRecorrido --> EditRecorrido: editarRecorrido()
 EditRecorrido --> ListRecorridos: abrirRecorridos()
 
 
-ListUbicaciones --> Menu: completarGestion()
+ListEspacios --> Menu: completarGestion()
 ListRecorridos --> Menu: completarGestion()
 
 @enduml

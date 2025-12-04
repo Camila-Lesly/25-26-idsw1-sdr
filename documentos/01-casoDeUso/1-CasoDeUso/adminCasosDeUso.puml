@@ -4,11 +4,11 @@ left to right direction
 
 actor "Administrador" as admin
 
-package "Gestión de Ubicaciones"{
-    usecase crearUbicacion as "crearUbicacion()"
-    usecase verUbicaciones as "verUbicaciones()"
-    usecase eliminarUbicacion as "eliminarUbicacion()"
-    usecase actualizarUbicacion as "actualizarUbicacion()"
+package "Gestión de Espacios"{
+    usecase crearEspacio as "crearEspacio()"
+    usecase verEspacios as "verEspacios()"
+    usecase eliminarEspacio as "eliminarEspacio()"
+    usecase actualizarEspacio as "actualizarEspacio()"
 }
 
 package "Gestión de Recorridos"{
@@ -18,10 +18,10 @@ package "Gestión de Recorridos"{
     usecase actualizarRecorrido as "actualizarRecorrido()"
 }
 
-(crearUbicacion) <-- admin
-(verUbicaciones) <-- admin
-(eliminarUbicacion) <-- admin
-(actualizarUbicacion) <-- admin
+(crearEspacio) <-- admin
+(verEspacios) <-- admin
+(eliminarEspacio) <-- admin
+(actualizarEspacio) <-- admin
 
 (crearRecorrido) <-- admin
 (verRecorridos) <-- admin
