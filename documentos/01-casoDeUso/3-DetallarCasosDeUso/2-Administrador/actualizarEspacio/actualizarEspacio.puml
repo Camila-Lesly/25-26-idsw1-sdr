@@ -1,0 +1,56 @@
+@startuml actualizarEspacio
+
+skinparam linetype polyline
+
+state actualizarEspacio as "actualizarEspacio()" {
+
+    state " " as EditandoDatos
+    state " " as GuardandoDatos 
+
+    [*] -[#green]-> EditandoDatos 
+    note on link
+    <b>Administrador</b> solicita editar espacio
+    end note    
+    
+    EditandoDatos -[#green]-> GuardandoDatos
+    note on link
+    <b>Sistema</b> presenta datos de edición
+    • Código, nombre del espacio
+    • Edificio asociado, planta
+    • Capacidad, tipo de espacio, recursos
+    • Horario, accesibilidad, observaciones
+    
+    <b>Sistema</b> permite solicitar:
+    • modificar campos
+    • guardar espacio
+    • cancelar edición
+    end note
+    
+    GuardandoDatos -[#green]-> EditandoDatos
+    note on link
+    <b>Administrador</b> solicita modificar campos
+    end note
+    
+    GuardandoDatos -[#green]-> [*]
+    note on link
+    <b>Administrador</b> solicita guardar y salir
+    end note
+
+    GuardandoDatos -[#red]-> [*]
+    note on link
+    <b>Administrador</b> solicita cancelar edición
+    end note
+
+}
+
+actualizarEspacio -[#green]-> ESPACIOS_ABIERTO
+note on link
+abrirListaEspacios()
+end note
+
+actualizarEspacio -[#red]-> ESPACIOS_ABIERTO
+note on link
+cancelar edición
+end note
+
+@enduml
