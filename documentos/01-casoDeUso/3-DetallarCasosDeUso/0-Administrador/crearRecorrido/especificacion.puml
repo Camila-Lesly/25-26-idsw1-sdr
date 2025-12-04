@@ -1,0 +1,40 @@
+@startuml crearRecorrido
+
+skinparam linetype polyline
+
+state crearRecorrido as "crearRecorrido()" {
+
+    state " " as SolicitandoDatos
+    state " " as CreandoRecorrido
+
+    [*] -[#green]-> SolicitandoDatos 
+    note on link
+    <b>Administrador</b> solicita crear recorrido nuevo
+    end note    
+    
+    SolicitandoDatos -[#green]-> CreandoRecorrido
+    note on link
+    <b>Sistema</b> presenta solicitud de datos mínimos del recorrido
+    • Nombre del recorrido (obligatorio)
+    • Permite solicitar crear recorrido
+    • Permite solicitar cancelar creación
+    end note
+    
+    CreandoRecorrido -[#green]-> [*]
+    note on link
+    <b>Administrador</b> proporciona datos mínimos
+    <b>Sistema</b> crea recorrido y transfiere a edición
+    end note
+}
+
+crearRecorrido -[#green]-> RECORRIDO_ABIERTO
+note on link
+editarRecorrido(recorridoNuevo)
+end note
+
+crearRecorrido -[#blue]-> RECORRIDOS_ABIERTO
+note on link
+cancelar creación
+end note
+
+@enduml
