@@ -1,0 +1,42 @@
+@startuml cambiarUbicacion
+
+skinparam linetype polyline
+
+state cambiarUbicacion as "cambiarUbicacion()" {
+
+    state " " as SolicitandoCambio
+    state "SeleccionandoUbicacion" as SeleccionandoUbicacion
+    state c <<choice>>
+
+    [*] -[#green]-> SolicitandoCambio 
+    note on link
+    <b>Visitante</b> solicita cambiar 
+                     su ubicación actual
+    end note    
+    
+    SolicitandoCambio -[#green]-> SeleccionandoUbicacion
+    note on link
+    <b>Sistema</b> presenta
+    • Opciones de ubicación
+    • Mapa interactivo
+    end note
+    
+    SeleccionandoUbicacion -[#green]-> c
+    note on link
+    <b>Visitante</b> solicita
+    • confirmar nueva ubicación
+    • cancelar cambio
+    end note
+    
+    c -[#green]-> [*]
+    note on link
+    confirmar / cancelar
+    end note
+}
+
+cambiarUbicacion -[#green]-> Explorando
+note on link
+regresa
+end note
+
+@enduml
