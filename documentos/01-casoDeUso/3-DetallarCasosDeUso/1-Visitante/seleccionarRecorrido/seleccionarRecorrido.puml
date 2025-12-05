@@ -1,0 +1,55 @@
+@startuml seleccionarRecorrido
+
+skinparam linetype polyline
+
+state seleccionarRecorrido as "seleccionarRecorrido()" {
+
+    state " " as ViendoDetalles
+    state " " as ConfirmandoInicio
+    state " " as IniciandoRecorrido
+    state c <<choice>>
+
+    [*] -[#green]-> ViendoDetalles 
+    note on link
+    <b>Visitante</b> solicita seleccionar recorrido
+    end note    
+    
+    ViendoDetalles -[#green]-> ConfirmandoInicio
+    note on link
+    <b>Sistema</b> presenta vista detallada del recorrido
+    • Nombre
+    • Descripción
+    • Lista de espacios en orden
+    • Mapa con ruta marcada
+    • Botón "Iniciar recorrido"
+    • Botón "Cancelar"
+    end note
+    
+    ConfirmandoInicio -[#green]-> IniciandoRecorrido
+    note on link
+    <b>Visitante</b> solicita iniciar recorrido
+    end note
+    
+    IniciandoRecorrido -[#green]-> c
+    note on link
+    <b>Sistema</b> activa el recorrido seleccionado
+    • Muestra primer espacio
+    • Activa controles de navegación
+    • Muestra indicador de progreso
+    • Botones "Siguiente", "Anterior", "Salir"
+    end note
+
+}
+
+    c -[#blue]-> CONSULTANDO
+    note on link
+    <b>Visitante</b> solicita cancelar
+    verRecorridosDisponibles()
+    end note
+    
+    c -[#green]-> EXPLORANDO
+    note on link
+    Consultando → EnRecorrido
+    end note
+
+@enduml

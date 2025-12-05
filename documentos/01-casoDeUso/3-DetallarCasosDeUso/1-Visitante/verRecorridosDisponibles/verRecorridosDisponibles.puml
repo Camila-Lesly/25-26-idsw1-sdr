@@ -1,0 +1,48 @@
+@startuml verRecorridosDisponibles
+
+skinparam linetype polyline
+
+state verRecorridosDisponibles as "verRecorridosDisponibles()" {
+
+    state " " as CargandoRecorridos
+    state " " as MostrandoRecorridos
+
+    [*] -[#green]-> CargandoRecorridos 
+    note on link
+    <b>Visitante</b> solicita ver recorridos disponibles
+    end note    
+    
+    CargandoRecorridos -[#green]-> MostrandoRecorridos
+    note on link
+    <b>Sistema</b> presenta lista de recorridos
+    • Nombre del recorrido
+    • Descripción breve
+    • Número de espacios incluidos
+    • Permite solicitar seleccionar recorrido
+    • Permite solicitar regresar
+    end note
+    
+    MostrandoRecorridos -[#green]-> MostrandoRecorridos
+    note on link
+    <b>Visitante</b> visualiza detalles de recorridos
+    <b>Sistema</b> permite desplazarse por la lista
+    end note
+    
+    MostrandoRecorridos -[#green]-> [*]
+    note on link
+    <b>Visitante</b> solicita seleccionar un recorrido
+    o regresar al menú principal
+    end note
+}
+
+verRecorridosDisponibles -[#green]-> EXPLORANDO
+note on link
+seleccionarRecorrido()
+end note
+
+verRecorridosDisponibles -[#blue]-> INACTIVO
+note on link
+regresar al menú principal
+end note
+
+@enduml
