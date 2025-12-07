@@ -1,11 +1,54 @@
-<div align=right>
+# Casos de Uso
 
-| [![](https://img.shields.io/badge/-Inicio-FFF?style=flat&logo=Emlakjet&logoColor=black)](/README.md) [![](https://img.shields.io/badge/-commitlint-282c34?style=flat&logo=commitlint&logoColor=white)](/documentos/commits/commit-instructions.md)  [![](https://img.shields.io/badge/-Modelo_de_Dominio-FFA500?style=flat&logo=LiveChat&logoColor=white)](/documentos/00-modeloDeDominio/README.md) [![](https://img.shields.io/badge/-Actores-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/actores/README.md/) [![](https://img.shields.io/badge/-Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/documentos/01-casoDeUso/1-CasoDeUso/README.md) [![](https://img.shields.io/badge/-Detallado_Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/detalladoCasosDeUso/README.md) [![](https://img.shields.io/badge/-Diagrama_De_Contexto-FFF?style=flat&logo=openstreetmap&logoColor=black)](/documentos/01-casoDeUso/2-DiagramaDeContexto/) [![](https://img.shields.io/badge/-Prototipos-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/prototipos/README.md) [![](https://img.shields.io/badge/-Sesiones_de_Requisitado-FFF?style=flat&logo=Proton&logoColor=black)](./documentos/sesiones/)
-|:-:|
+<div align=center>
+
+|||||
+|-|-|-|-|
+|[Inicio](/README.md)|[Modelo del dominio](/documentos/00-modeloDeDominio/README.md)|**Casos de uso**|[Análisis]()|
 
 </div>
 
-# Actores
+## Actores y casos de uso identificados
 
-- Administradores de la plataforma
-- Visitante
+<div align=center>
+
+|||
+|:-:|:-:|
+|![Actores y Casos de Uso](/documentos/01-casoDeUso/1-CasoDeUso/Administrador/administradorCasoDeUso.svg)|![Actores y Casos de Uso](/documentos/01-casoDeUso/1-CasoDeUso/Visitante/visitanteCasosDeUso.svg)|!
+|Código fuente:[ administrador.puml](/documentos/01-casoDeUso/1-CasoDeUso/Administrador/adminCasosDeUso.puml)|Código fuente: [visitante.puml](/documentos/01-casoDeUso/1-CasoDeUso/Visitante/visitanteCasosDeUso.puml)
+
+</div>
+
+## Diagrama de contexto
+
+<div align=center>
+
+|||
+|:-:|:-:|
+|![Administrador](/documentos/01-casoDeUso/2-DiagramaDeContexto/diagramaDeContextoAdministrador.svg)|![Visitante](/documentos/01-casoDeUso/2-DiagramaDeContexto/diagramaDeContextoVisitante.svg)|!
+|Código fuente:[ administrador.puml](/documentos/01-casoDeUso/1-CasoDeUso/Administrador/adminCasosDeUso.puml)|Código fuente: [visitante.puml](/documentos/01-casoDeUso/1-CasoDeUso/Visitante/visitanteCasosDeUso.puml)
+
+</div>
+
+## Detalle de los casos de uso
+
+### Diagramas detallados (Administrador)
+
+|Gestión de espacios|Gestión de recorridos|
+|-|-|
+|[verEspacios()](../3-DetallarCasosDeUso/0-Administrador/abrirEspacios/abrirEspacios.png)|[verRecorridos()](../3-DetallarCasosDeUso/0-Administrador/abrirRecorridos/abrirRecorridos.png)|
+|[crearEspacio()](../3-DetallarCasosDeUso/0-Administrador/crearEspacio/crearEspacio.png)|[crearRecorrido()](../3-DetallarCasosDeUso/0-Administrador/crearRecorrido/crearRecorrido.png)|
+|[actualizarEspacio()](../3-DetallarCasosDeUso/0-Administrador/actualizarEspacio/actualizarEspacio.png)|[actualizarRecorrido()](../3-DetallarCasosDeUso/0-Administrador/actualizarRecorrido/actualizarRecorrido.png)|
+|[eliminarEspacio()](../3-DetallarCasosDeUso/0-Administrador/eliminarEspacio/eliminarEspacio.png)|[eliminarRecorrido()](../3-DetallarCasosDeUso/0-Administrador/eliminarRecorrido/eliminarRecorrido.png)|
+
+
+### Diagramas detallados (Visitante) 
+
+|Recorridos y ubicación|Exploración de espacios|
+|-|-|
+|[buscarEspacio()](../3-DetallarCasosDeUso/1-Visitante/buscarUbicacion/buscarUbicacion.png)|[verDetalles()](../3-DetallarCasosDeUso/1-Visitante/verDetalles/verDetalles.svg)|
+|[cambiarDeEspacio()](../3-DetallarCasosDeUso/1-Visitante/cambiarUbicacion/cambiarUbicacion.png)|[verEspaciosCercanos()](../3-DetallarCasosDeUso/1-Visitante/verEspaciosCercanos/verEspaciosCercanos.svg)|
+|[verUbicacionActual()](../3-DetallarCasosDeUso/1-Visitante/verUbicacionActual/verUbicacionActual.png)|[verEspaciosPlanta()](../3-DetallarCasosDeUso/1-Visitante/verEspaciosPlanta/verEspaciosPlanta.svg)|
+|[verRecorridosDisponibles()](../3-DetallarCasosDeUso/1-Visitante/verRecorridosDisponibles/verRecorridosDisponibles.png)| |
+|[seleccionarRecorrido()](../3-DetallarCasosDeUso/1-Visitante/seleccionarRecorrido/seleccionarRecorrido.png)| |
+|[salirRecorrido()](../3-DetallarCasosDeUso/1-Visitante/salirRecorrido/salirRecorrido.png)| |
