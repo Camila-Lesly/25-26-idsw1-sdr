@@ -36,11 +36,10 @@
 
 |Gestión de espacios|Gestión de recorridos|
 |-|-|
-|[verEspacios()](../3-DetallarCasosDeUso/0-Administrador/abrirEspacios/abrirEspacios.png)|[verRecorridos()](../3-DetallarCasosDeUso/0-Administrador/abrirRecorridos/abrirRecorridos.png)|
-|[crearEspacio()](../3-DetallarCasosDeUso/0-Administrador/crearEspacio/crearEspacio.png)|[crearRecorrido()](../3-DetallarCasosDeUso/0-Administrador/crearRecorrido/crearRecorrido.png)|
-|[actualizarEspacio()](../3-DetallarCasosDeUso/0-Administrador/actualizarEspacio/actualizarEspacio.png)|[actualizarRecorrido()](../3-DetallarCasosDeUso/0-Administrador/actualizarRecorrido/actualizarRecorrido.png)|
-|[eliminarEspacio()](../3-DetallarCasosDeUso/0-Administrador/eliminarEspacio/eliminarEspacio.png)|[eliminarRecorrido()](../3-DetallarCasosDeUso/0-Administrador/eliminarRecorrido/eliminarRecorrido.png)|
-
+|[verEspacios()](../3-DetallarCasosDeUso/0-Administrador/verEspacios/verEspacio.svg)|[verRecorridos()](../3-DetallarCasosDeUso/0-Administrador/verRecorridos/verRecorridos.svg)|
+|[crearEspacio()](../3-DetallarCasosDeUso/0-Administrador/crearEspacio/crearEspacio.svg)|[crearRecorrido()](../3-DetallarCasosDeUso/0-Administrador/crearRecorrido/crearRecorrido.svg)|
+|[actualizarEspacio()](../3-DetallarCasosDeUso/0-Administrador/actualizarEspacio/actualizarEspacio.svg)|[actualizarRecorrido()](../3-DetallarCasosDeUso/0-Administrador/actualizarRecorrido/actualizarRecorrido.svg)|
+|[eliminarEspacio()](../3-DetallarCasosDeUso/0-Administrador/eliminarEspacio/eliminarEspacio.svg)|[eliminarRecorrido()](../3-DetallarCasosDeUso/0-Administrador/eliminarRecorrido/eliminarRecorrido.svg)|
 
 ### Diagramas detallados (Visitante) 
 
