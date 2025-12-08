@@ -45,9 +45,9 @@
 
 |Recorridos y ubicación|Exploración de espacios|
 |-|-|
-|[buscarEspacio()](../3-DetallarCasosDeUso/1-Visitante/buscarUbicacion/buscarUbicacion.png)|[verDetalles()](../3-DetallarCasosDeUso/1-Visitante/verDetalles/verDetalles.svg)|
-|[cambiarDeEspacio()](../3-DetallarCasosDeUso/1-Visitante/cambiarUbicacion/cambiarUbicacion.png)|[verEspaciosCercanos()](../3-DetallarCasosDeUso/1-Visitante/verEspaciosCercanos/verEspaciosCercanos.svg)|
-|[verUbicacionActual()](../3-DetallarCasosDeUso/1-Visitante/verUbicacionActual/verUbicacionActual.png)|[verEspaciosPlanta()](../3-DetallarCasosDeUso/1-Visitante/verEspaciosPlanta/verEspaciosPlanta.svg)|
-|[verRecorridosDisponibles()](../3-DetallarCasosDeUso/1-Visitante/verRecorridosDisponibles/verRecorridosDisponibles.png)| |
-|[seleccionarRecorrido()](../3-DetallarCasosDeUso/1-Visitante/seleccionarRecorrido/seleccionarRecorrido.png)| |
-|[salirRecorrido()](../3-DetallarCasosDeUso/1-Visitante/salirRecorrido/salirRecorrido.png)| |
+|[buscarEspacio()](../3-DetallarCasosDeUso/1-Visitante/buscarUbicacion/buscarUbicacion.svg)|[verDetalles()](../3-DetallarCasosDeUso/1-Visitante/verDetalles/verDetalles.svg)|
+|[cambiarDeEspacio()](../3-DetallarCasosDeUso/1-Visitante/cambiarUbicacion/cambiarUbicacion.svg)|[verEspaciosCercanos()](../3-DetallarCasosDeUso/1-Visitante/verEspaciosCercanos/verEspaciosCercanos.svg)|
+|[verUbicacionActual()](../3-DetallarCasosDeUso/1-Visitante/verUbicacionActual/verUbicacionActual.svg)|[verEspaciosPlanta()](../3-DetallarCasosDeUso/1-Visitante/verEspaciosPlanta/verEspaciosPlanta.svg)|
+|[verRecorridosDisponibles()](../3-DetallarCasosDeUso/1-Visitante/verRecorridosDisponibles/verRecorridosDisponibles.svg)| |
+|[seleccionarRecorrido()](../3-DetallarCasosDeUso/1-Visitante/seleccionarRecorrido/seleccionarRecorrido.svg)| |
+|[salirRecorrido()](../3-DetallarCasosDeUso/1-Visitante/salirRecorrido/salirRecorrido.svg)| |

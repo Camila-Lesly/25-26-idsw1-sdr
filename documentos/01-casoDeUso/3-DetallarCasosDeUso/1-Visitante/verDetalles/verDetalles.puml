@@ -1,11 +1,9 @@
-@startuml verDetalles
-
+@startuml
 skinparam linetype polyline
 
 state verDetalles as "verDetalles()" {
-
     state " " as SolicitandoDetalles
-    state "Consultando" as ConsultandoDetalles
+    state ConsultandoDetalles
     state c <<choice>>
 
     [*] -[#green]-> SolicitandoDetalles 
@@ -38,9 +36,8 @@ state verDetalles as "verDetalles()" {
     end note
 }
 
-verDetalles -[#green]-> Explorando
+verDetalles -[#green]-> ESPACIO_ABIERTO
 note on link
 regresa
 end note
-
 @enduml

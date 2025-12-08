@@ -1,11 +1,9 @@
-@startuml cambiarUbicacion
-
+@startuml
 skinparam linetype polyline
 
-state cambiarUbicacion as "cambiarUbicacion()" {
-
+state cambiarEspacio as "cambiarEspacio()" {
     state " " as SolicitandoCambio
-    state "SeleccionandoUbicacion" as SeleccionandoUbicacion
+    state SeleccionandoUbicacion
     state c <<choice>>
 
     [*] -[#green]-> SolicitandoCambio 
@@ -21,22 +19,20 @@ state cambiarUbicacion as "cambiarUbicacion()" {
     • Mapa interactivo
     end note
     
-    SeleccionandoUbicacion -[#green]-> c
+    SeleccionandoUbicacion -[#green]-> c 
     note on link
     <b>Visitante</b> solicita
     • confirmar nueva ubicación
     • cancelar cambio
     end note
     
-    c -[#green]-> [*]
+        c -[#green]-> [*]
     note on link
     confirmar / cancelar
     end note
 }
 
-cambiarUbicacion -[#green]-> Explorando
-note on link
-regresa
-end note
-
+' ← CONTEXTUALIZADO correctamente:
+ESPACIO_ABIERTO --> cambiarEspacio : cambiarDeEspacio()
+cambiarEspacio --> ESPACIO_ABIERTO : ubicacionConfirmada()
 @enduml

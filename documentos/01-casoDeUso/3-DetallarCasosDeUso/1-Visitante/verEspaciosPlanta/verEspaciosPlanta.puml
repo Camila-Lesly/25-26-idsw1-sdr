@@ -1,11 +1,9 @@
-@startuml verEspaciosPlanta
-
+@startuml
 skinparam linetype polyline
 
 state verEspaciosPlanta as "verEspaciosPlanta()" {
-
     state " " as SolicitandoEspaciosPlanta
-    state "Consultando" as ConsultandoEspaciosPlanta
+    state ConsultandoEspaciosPlanta
     state c <<choice>>
 
     [*] -[#green]-> SolicitandoEspaciosPlanta 
@@ -37,9 +35,8 @@ state verEspaciosPlanta as "verEspaciosPlanta()" {
     end note
 }
 
-verEspaciosPlanta -[#green]-> Explorando
+verEspaciosPlanta -[#green]-> ESPACIO_ABIERTO
 note on link
 regresa
 end note
-
 @enduml

@@ -1,5 +1,4 @@
-@startuml salirRecorrido
-
+@startuml
 skinparam linetype polyline
 
 state salirRecorrido as "salirRecorrido()" {
@@ -39,15 +38,14 @@ state salirRecorrido as "salirRecorrido()" {
 
 }
 
-    c -[#blue]-> EXPLORANDO
+    c -[#blue]-> RECORRIDO_ABIERTO
     note on link
     <b>Visitante</b> solicita continuar recorrido
     end note
     
-    c -[#green]-> CONSULTANDO
+    c -[#green]-> RECORRIDOS_ABIERTOS
     note on link
     Explorando → Inactivo
     verRecorridosDisponibles()
     end note
-
 @enduml

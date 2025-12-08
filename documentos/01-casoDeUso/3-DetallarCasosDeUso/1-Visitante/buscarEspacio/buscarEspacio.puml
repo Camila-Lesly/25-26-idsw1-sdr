@@ -1,8 +1,7 @@
-@startuml buscarUbicacion
-
+@startuml
 skinparam linetype polyline
 
-state buscarUbicacion as "buscarUbicacion()" {
+state buscarEspacio as "buscarEspacio()" {
 
     state " " as SolicitandoBusqueda
     state "MostrandoResultados" as MostrandoResultados
@@ -20,7 +19,7 @@ state buscarUbicacion as "buscarUbicacion()" {
     • Resultados de búsqueda
     end note
     
-    MostrandoResultados -[#green]-> c
+     MostrandoResultados -[#green]-> c
     note on link
     <b>Visitante</b> solicita
     • seleccionar ubicación
@@ -40,9 +39,8 @@ state buscarUbicacion as "buscarUbicacion()" {
     end note
 }
 
-buscarUbicacion -[#green]-> Explorando
+buscarEspacio -[#green]->RECORRIDO_ABIERTO
 note on link
 regresa
 end note
-
 @enduml
