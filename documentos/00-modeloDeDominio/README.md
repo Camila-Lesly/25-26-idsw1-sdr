@@ -4,7 +4,7 @@
 
 |||||
 |-|-|-|-|
-|[Inicio](/README.md)|**Modelo del dominio**|[Casos de uso]()|[Análisis]()|
+|[Inicio](/README.md)|**Modelo del dominio**|[Casos de uso](/documentos/01-casoDeUso/0-Actores/README.md)
 
 </div>
 
