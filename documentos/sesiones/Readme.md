@@ -24,3 +24,9 @@ En el desarrollo de este Proyecto, hemos tenido una serie de sesiones con el cli
 ### Notas
 
   * [Notas Grupales](./30-10-2025/Apuntes%20grupales.md)
+
+## Sesión 2/12/2025
+
+### Notas
+
+  * [Notas Grupales](./2-12-2025/Readme.md)

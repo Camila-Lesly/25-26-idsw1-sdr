@@ -26,9 +26,9 @@ Crear una aplicación móvil con un mapa 3D interactivo del campus para que estu
 En este apartado se describe la estructura lógica del sistema y las relaciones entre sus componentes principales.  
 
 **Diagramas disponibles:**  
-- [Diagramas de Clases](./documentos/00-modeloDeDominio/DiagramaDeClases/diagramaDeClases.png)  
+- [Diagramas de Clases](./documentos/00-modeloDeDominio/DiagramaDeClases/diagramaDeDominio.svg)  
 - [Diagramas de Estados](/documentos/00-modeloDeDominio/DiagramaDeEstados/)  
-- [Diagramas de Objetos](/documentos/00-modeloDeDominio/DiagramaDeObjetos/diagramaDeObjetos.png)  
+- [Diagramas de Objetos](/documentos/00-modeloDeDominio/DiagramaDeObjetos/DiagramaDeObjetos.svg)  
 
 ## **Casos de Uso**
 
@@ -38,10 +38,10 @@ Cada caso de uso puede incluir su descripción, flujo principal, excepciones y p
 **Secciones disponibles:**  
 - [Actores](/documentos/01-casoDeUso/0-Actores/README.md)  
 - [Diagrama de Casos de Uso](/documentos/01-casoDeUso/1-CasoDeUso/README.md)  
-- [Diagrama de Contexto - Administrador](/documentos/01-casoDeUso/2-DiagramaDeContexto/diagramaDeContextoAdministrador.png)  
-- [Diagrama de Contexto - Visitante](/documentos/01-casoDeUso/2-DiagramaDeContexto/diagramDeContextoVisitante.png) 
-- [Casos de Uso Detallados](/Casos_de_Uso/Casos_de_Uso/)  
-- [Prototipos](/Casos_de_Uso/Prototipos/)
+- [Diagrama de Contexto - Administrador](/documentos/01-casoDeUso/2-DiagramaDeContexto/diagramaDeContextoAdministrador.svg)  
+- [Diagrama de Contexto - Visitante](/documentos/01-casoDeUso/2-DiagramaDeContexto/diagramaDeContextoVisitante.svg)  
+- [Casos de Uso Detallados](/documentos/01-casoDeUso/3-DetallarCasosDeUso/)  
+- [Prototipos](/documentos/01-casoDeUso/4-Prototipo/)
 
 ## **Sesiones con el Cliente**
 
@@ -51,8 +51,7 @@ Apuntes y conclusiones de las reuniones mantenidas durante el desarrollo del pro
 - [Todas las sesiones](./documentos/sesiones/)  
 - [Sesión 1](./documentos/sesiones/27-10-2025/)  
 - [Sesión 2](./documentos/sesiones/30-10-2025/)  
-- [Sesión 3](/Sesiones/ejemplo-3.md)  
-- [Sesión final](/Sesiones/final.md)
+- [Sesión 3](./documentos/sesiones/2-12-2025/Readme.md)  
 
 
 ##  **Glosario**
