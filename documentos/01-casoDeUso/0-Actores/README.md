@@ -43,8 +43,6 @@
 
 ### Diagramas detallados (Visitante) 
 
-> **Nota:** Los prototipos del Visitante aún no están disponibles. Por favor, crear en `/4-Prototipo/1-Visitante/`.
-
 |Recorridos y ubicación|Exploración de espacios|
 |-|-|
 |[buscarEspacio()](../4-Prototipo/1-Visitante/buscarEspacio/buscarEspacio.md)|[verDetalles()](../4-Prototipo/1-Visitante/verDetalles/verDetalles.md)|

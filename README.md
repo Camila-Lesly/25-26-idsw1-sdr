@@ -1,6 +1,6 @@
 <div align=right>
 
-| [![](https://img.shields.io/badge/-Inicio-FFF?style=flat&logo=Emlakjet&logoColor=black)](/README.md) [![](https://img.shields.io/badge/-commitlint-282c34?style=flat&logo=commitlint&logoColor=white)](/documentos/commits/commit-instructions.md)  [![](https://img.shields.io/badge/-Modelo_de_Dominio-FFF?style=flat&logo=LiveChat&logoColor=black)](/documentos/00-modeloDeDominio/README.md) [![](https://img.shields.io/badge/-Actores-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/actores/README.md/) [![](https://img.shields.io/badge/-Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/documentos/01-casoDeUso/1-CasoDeUso/README.md) [![](https://img.shields.io/badge/-Detallado_Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/detalladoCasosDeUso/README.md) [![](https://img.shields.io/badge/-Diagrama_De_Contexto-FFF?style=flat&logo=openstreetmap&logoColor=black)](/documentos/01-casoDeUso/2-DiagramaDeContexto/) [![](https://img.shields.io/badge/-Prototipos-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/prototipos/README.md) [![](https://img.shields.io/badge/-Sesiones_de_Requisitado-FFF?style=flat&logo=Proton&logoColor=black)](./documentos/sesiones/)
+| [![](https://img.shields.io/badge/-Inicio-FFF?style=flat&logo=Emlakjet&logoColor=black)](/README.md) [![](https://img.shields.io/badge/-commitlint-282c34?style=flat&logo=commitlint&logoColor=white)](/documentos/commits/commit-instructions.md)  [![](https://img.shields.io/badge/-Modelo_de_Dominio-FFF?style=flat&logo=LiveChat&logoColor=black)](/documentos/00-modeloDeDominio/README.md) [![](https://img.shields.io/badge/-Actores_&_Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/documentos/01-casoDeUso/0-Actores/README.md)[![](https://img.shields.io/badge/-Diagrama_De_Contexto-FFF?style=flat&logo=openstreetmap&logoColor=black)](/documentos/01-casoDeUso/0-Actores/README.md/) [![](https://img.shields.io/badge/-Detallar_&_Prototipar-FFF?style=flat&logo=openstreetmap&logoColor=black)](/documentos/01-casoDeUso/0-Actores/README.md) [![](https://img.shields.io/badge/-Sesiones_de_Requisitado-FFF?style=flat&logo=Proton&logoColor=black)](./documentos/sesiones/)
 |:-:|
 
 </div>
@@ -37,7 +37,7 @@ Cada caso de uso puede incluir su descripción, flujo principal, excepciones y p
 
 **Secciones disponibles:**  
 - [Actores](/documentos/01-casoDeUso/0-Actores/README.md)  
-- [Diagrama de Casos de Uso](/documentos/01-casoDeUso/1-CasoDeUso/README.md)  
+- [Diagrama de Casos de Uso](/documentos/01-casoDeUso/)  
 - [Diagrama de Contexto - Administrador](/documentos/01-casoDeUso/2-DiagramaDeContexto/diagramaDeContextoAdministrador.svg)  
 - [Diagrama de Contexto - Visitante](/documentos/01-casoDeUso/2-DiagramaDeContexto/diagramaDeContextoVisitante.svg)  
 - [Casos de Uso Detallados](/documentos/01-casoDeUso/3-DetallarCasosDeUso/)  
@@ -51,7 +51,7 @@ Apuntes y conclusiones de las reuniones mantenidas durante el desarrollo del pro
 - [Todas las sesiones](./documentos/sesiones/)  
 - [Sesión 1](./documentos/sesiones/27-10-2025/)  
 - [Sesión 2](./documentos/sesiones/30-10-2025/)  
-- [Sesión 3](./documentos/sesiones/2-12-2025/Readme.md)  
+- [Sesión 3](./documentos/sesiones/2-12-2025/)  
 
 
 ##  **Glosario**
