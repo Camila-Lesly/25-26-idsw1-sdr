@@ -36,18 +36,20 @@
 
 |Gestión de espacios|Gestión de recorridos|
 |-|-|
-|[verEspacios()](../4-Prototipo/0-Administrador/verEspacios/)|[verRecorridos()](../4-Prototipo/0-Administrador/verRecorridos/)|
-|[crearEspacio()](../4-Prototipo/0-Administrador/crearEspacio/)|[crearRecorrido()](../4-Prototipo/0-Administrador/crearRecorrido/)|
-|[actualizarEspacio()](../4-Prototipo/0-Administrador/actualizarEspacio/)|[actualizarRecorrido()](../4-Prototipo/0-Administrador/actualizarRecorrido/)|
-|[eliminarEspacio()](../4-Prototipo/0-Administrador/eliminarEspacio/)|[eliminarRecorrido()](../4-Prototipo/0-Administrador/eliminarRecorrido/)|
+|[verEspacios()](../4-Prototipo/0-Administrador/verEspacios/verEspacios.md)|[verRecorridos()](../4-Prototipo/0-Administrador/verRecorridos/verRecorridos.md)|
+|[crearEspacio()](../4-Prototipo/0-Administrador/crearEspacio/crearEspacio.md)|[crearRecorrido()](../4-Prototipo/0-Administrador/crearRecorrido/crearRecorrido.md)|
+|[actualizarEspacio()](../4-Prototipo/0-Administrador/actualizarEspacio/actualizarEspacio.md)|[actualizarRecorrido()](../4-Prototipo/0-Administrador/actualizarRecorrido/actualizarRecorrido.md)|
+|[eliminarEspacio()](../4-Prototipo/0-Administrador/eliminarEspacio/eliminarEspacio.md)|[eliminarRecorrido()](../4-Prototipo/0-Administrador/eliminarRecorrido/eliminarRecorrido.md)|
 
 ### Diagramas detallados (Visitante) 
 
+> **Nota:** Los prototipos del Visitante aún no están disponibles. Por favor, crear en `/4-Prototipo/1-Visitante/`.
+
 |Recorridos y ubicación|Exploración de espacios|
 |-|-|
-|[buscarEspacio()](../4-Prototipo/1-Visitante/buscarEspacio/)|[verDetalles()](../4-Prototipo/1-Visitante/verDetalles/)|
-|[cambiarDeEspacio()](../4-Prototipo/1-Visitante/cambiarDeEspacio/)|[verEspaciosCercanos()](../4-Prototipo/1-Visitante/verEspaciosCercanos/)|
-|[verUbicacionActual()](../4-Prototipo/1-Visitante/verUbicacionActual/)|[verEspaciosPlanta()](../4-Prototipo/1-Visitante/verEspaciosPlanta/)|
-|[verRecorridosDisponibles()](../4-Prototipo/1-Visitante/verRecorridosDisponibles/)| |
-|[seleccionarRecorrido()](../4-Prototipo/1-Visitante/seleccionarRecorrido/)| |
-|[salirRecorrido()](../4-Prototipo/1-Visitante/salirRecorrido/)| |
+|[buscarEspacio()](../4-Prototipo/1-Visitante/buscarEspacio/buscarEspacio.md)|[verDetalles()](../4-Prototipo/1-Visitante/verDetalles/verDetalles.md)|
+|[cambiarDeEspacio()](../4-Prototipo/1-Visitante/cambiarDeEspacio/cambiarDeEspacio.md)|[verEspaciosCercanos()](../4-Prototipo/1-Visitante/verEspaciosCercanos/verEspaciosCercanos.md)|
+|[verUbicacionActual()](../4-Prototipo/1-Visitante/verUbicacionActual/verUbicacionActual.md)|[verEspaciosPlanta()](../4-Prototipo/1-Visitante/verEspaciosPlanta/verEspaciosPlanta.md)|
+|[verRecorridosDisponibles()](../4-Prototipo/1-Visitante/verRecorridosDisponibles/verRecorridosDisponibles.md)| |
+|[seleccionarRecorrido()](../4-Prototipo/1-Visitante/seleccionarRecorrido/seleccionarRecorrido.md)| |
+|[salirRecorrido()](../4-Prototipo/1-Visitante/salirRecorrido/salirRecorrido.md)| |
