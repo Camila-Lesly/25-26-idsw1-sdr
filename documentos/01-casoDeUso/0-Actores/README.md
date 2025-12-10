@@ -43,7 +43,7 @@
 
 ### Diagramas detallados (Visitante) 
 
-|Recorridos y ubicación|Exploración de espacios|
+|Gestión de recorridos|Gestión de espacios|
 |-|-|
 |[buscarEspacio()](../4-Prototipo/1-Visitante/buscarEspacio/buscarEspacio.md)|[verDetalles()](../4-Prototipo/1-Visitante/verDetalles/verDetalles.md)|
 |[cambiarDeEspacio()](../4-Prototipo/1-Visitante/cambiarDeEspacio/cambiarDeEspacio.md)|[verEspaciosCercanos()](../4-Prototipo/1-Visitante/verEspaciosCercanos/verEspaciosCercanos.md)|
