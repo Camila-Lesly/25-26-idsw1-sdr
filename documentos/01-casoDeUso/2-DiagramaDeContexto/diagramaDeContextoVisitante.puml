@@ -6,7 +6,7 @@ state "SESION_CERRADA" as NoAuth
 state "UNIVERSIDAD_DISPONIBLE" as Universidad
 state "RECORRIDOS_ABIERTOS" as ListRecorridos
 state "RECORRIDO_ABIERTO" as Recorrido
-state "UBICACION_ABIERTA" as Ubicacion
+state "ESPACIO_ABIERTO" as Espacio
 
 
 [*] --> NoAuth
@@ -23,16 +23,20 @@ ListRecorridos --> Universidad : abrirUniversidad()
 ListRecorridos --> Recorrido : seleccionarRecorrido()
 Recorrido --> ListRecorridos : abrirRecorridos()
 
-' --- Acciones sobre ubicación ---
-Recorrido --> Ubicacion : buscarUbicacion()
-Recorrido --> Ubicacion : verDetallesUbicacion()
-Recorrido --> Ubicacion : verUbicacionesCercanas()
-Recorrido --> Ubicacion : verUbicacionesPlanta()
+' --- Acciones sobre espacio ---
+Recorrido --> Espacio : buscarEspacio()
+Recorrido --> Espacio : verDetallesEspacio()
+Recorrido --> Espacio : verEspaciosCercanos()
+Recorrido --> Espacio : verEspaciosPlanta()
+Recorrido --> Espacio : verEspacioActual()
+Recorrido --> Espacio : cambiarDeEspacio()
 
-Ubicacion --> Ubicacion : verDetallesUbicacion()
-Ubicacion --> Ubicacion : verUbicacionesCercanas()
-Ubicacion --> Ubicacion : verUbicacionesPlanta()
 
-Ubicacion --> Recorrido :abrirRecorrido()
+Espacio --> Espacio : verDetallesEspacio()
+Espacio --> Espacio : verEspaciosCercanos()
+Espacio --> Espacio : verEspaciosPlanta()
+Espacio --> Espacio : cambiarDeEspacio()
+Espacio --> Espacio : verEspacioActual()
+Espacio --> Recorrido :seleccionarRecorrido()
 
 @enduml

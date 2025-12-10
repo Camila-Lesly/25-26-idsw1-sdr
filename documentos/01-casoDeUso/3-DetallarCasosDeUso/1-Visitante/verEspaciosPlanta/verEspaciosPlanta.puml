@@ -1,0 +1,42 @@
+@startuml
+skinparam linetype polyline
+
+state verEspaciosPlanta as "verEspaciosPlanta()" {
+    state " " as SolicitandoEspaciosPlanta
+    state ConsultandoEspaciosPlanta
+    state c <<choice>>
+
+    [*] -[#green]-> SolicitandoEspaciosPlanta 
+    note on link
+    <b>Visitante</b> solicita ver espacios de la planta
+    end note    
+    
+    SolicitandoEspaciosPlanta -[#green]-> ConsultandoEspaciosPlanta
+    note on link
+    <b>Sistema</b> presenta
+    • lista de espacios de la planta
+    end note
+    
+    ConsultandoEspaciosPlanta -[#green]-> c
+    note on link
+    <b>Visitante</b> solicita
+    • continuar consultando
+    • salir de espacios de la planta
+    end note
+    
+    c -[#green]-> ConsultandoEspaciosPlanta
+    note on link
+    continuar consultando
+    end note
+
+    c -[#green]-> [*]
+    note on link
+    salir de espacios de la planta
+    end note
+}
+
+verEspaciosPlanta -[#green]-> ESPACIO_ABIERTO
+note on link
+regresa
+end note
+@enduml
