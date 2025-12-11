@@ -1,0 +1,33 @@
+@startuml
+
+left to right direction
+
+actor "Administrador" as admin
+
+package "Gestión de Espacios"{
+    usecase crearEspacio as "crearEspacio()"
+    usecase verEspacios as "verEspacios()"
+    usecase eliminarEspacio as "eliminarEspacio()"
+    usecase actualizarEspacio as "actualizarEspacio()"
+}
+
+package "Gestión de Recorridos"{
+    usecase crearRecorrido as "crearRecorrido()"
+    usecase verRecorridos as "verRecorridos()"
+    usecase eliminarRecorrido as "eliminarRecorrido()"
+    usecase actualizarRecorrido as "actualizarRecorrido()"
+}
+
+(crearEspacio) <-- admin
+(verEspacios) <-- admin
+(eliminarEspacio) <-- admin
+(actualizarEspacio) <-- admin
+
+(crearRecorrido) <-- admin
+(verRecorridos) <-- admin
+(eliminarRecorrido) <-- admin
+(actualizarRecorrido) <-- admin
+
+
+
+@enduml

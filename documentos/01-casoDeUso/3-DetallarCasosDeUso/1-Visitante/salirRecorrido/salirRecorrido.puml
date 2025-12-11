@@ -1,0 +1,51 @@
+@startuml
+skinparam linetype polyline
+
+state salirRecorrido as "salirRecorrido()" {
+
+    state " " as SolicitandoSalida
+    state " " as ConfirmandoSalida
+    state " " as RegistrandoEstadisticas
+    state c <<choice>>
+
+    [*] -[#green]-> SolicitandoSalida 
+    note on link
+    <b>Visitante</b> solicita salir del recorrido
+    end note    
+    
+    SolicitandoSalida -[#green]-> ConfirmandoSalida
+    note on link
+    <b>Sistema</b> presenta confirmación de salida
+    • Mensaje: "¿Estás seguro que deseas salir?"
+    • Botón "Salir"
+    • Botón "Continuar recorrido"
+    end note
+    
+    ConfirmandoSalida -[#green]-> RegistrandoEstadisticas
+    note on link
+    <b>Visitante</b> confirma salida
+    <b>Sistema</b> registra estadísticas:
+    • Espacios visitados
+    end note
+    
+    RegistrandoEstadisticas -[#green]-> c
+    note on link
+    <b>Sistema</b> muestra resumen:
+    • "Recorrido finalizado"
+    • Espacios visitados / Total
+    • Permite regresar a exploración
+    end note
+
+}
+
+    c -[#blue]-> RECORRIDO_ABIERTO
+    note on link
+    <b>Visitante</b> solicita continuar recorrido
+    end note
+    
+    c -[#green]-> RECORRIDOS_ABIERTOS
+    note on link
+    Explorando → Inactivo
+    verRecorridosDisponibles()
+    end note
+@enduml

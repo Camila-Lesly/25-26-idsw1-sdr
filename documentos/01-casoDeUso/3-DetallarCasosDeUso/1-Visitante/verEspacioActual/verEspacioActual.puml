@@ -1,0 +1,39 @@
+@startuml
+skinparam linetype polyline
+
+state verEspacioActual as "verEspacioActual()" {
+
+    state " " as SolicitandoVerUbicacion
+    state "MostrandoUbicacion" as MostrandoUbicacion
+    state c <<choice>>
+
+    [*] -[#green]-> SolicitandoVerUbicacion 
+    note on link
+    <b>Visitante</b> solicita ver 
+                     su ubicación actual
+    end note    
+    
+    SolicitandoVerUbicacion -[#green]-> MostrandoUbicacion
+    note on link
+    <b>Sistema</b> presenta
+    • Ubicación actual en mapa
+    • Detalles de la ubicación
+    end note
+    
+    MostrandoUbicacion -[#green]-> c
+    note on link
+    <b>Visitante</b> solicita
+    • salir de vista
+    end note
+    
+    c -[#green]-> [*]
+    note on link
+    salir
+    end note
+}
+
+verEspacioActual -[#green]-> ESPACIO_ABIERTO
+note on link
+regresa
+end note
+@enduml

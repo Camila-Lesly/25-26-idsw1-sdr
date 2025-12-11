@@ -1,0 +1,32 @@
+@startuml
+
+left to right direction
+
+actor "Visitante" as visitante
+
+package "Gestión de Espacio"{
+    usecase verEspacioActual as "verEspacioActual()"
+    usecase cambiarDeEspacio as "cambiarDeEspacio()"
+    usecase buscarEspacio as "buscarEspacio()"
+    usecase verDetallesEspacio as "verDetallesEspacio()"
+    usecase verEspaciosCercanos as "verEspaciosCercanos()"
+    usecase verEspaciosPlanta as "verEspaciosPlanta()"
+}
+
+package "Gestión de Recorrido"{
+    usecase verRecorridosDisponibles as "verRecorridosDisponibles()"
+    usecase salirrRecorrido as "salirRecorrido()"
+    usecase seleccionarRecorrido as "seleccionarRecorrido()"
+}
+
+visitante --> (verEspacioActual)
+visitante --> (cambiarDeEspacio)
+visitante --> (buscarEspacio)
+visitante --> (verDetallesEspacio)
+visitante --> (verEspaciosCercanos)
+visitante --> (verEspaciosPlanta)
+
+(seleccionarRecorrido) <-- visitante
+(verRecorridosDisponibles) <-- visitante
+(salirrRecorrido) <-- visitante
+@enduml

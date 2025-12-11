@@ -1,0 +1,45 @@
+@startuml eliminarEspacio
+
+skinparam linetype polyline
+
+state eliminarEspacio as "eliminarEspacio()" {
+
+    state " " as ConfirmandoEliminacion
+    state " " as EliminandoEspacio
+
+    [*] -[#green]-> ConfirmandoEliminacion 
+    note on link
+    <b>Administrador</b> solicita eliminar espacio
+    end note    
+    
+    ConfirmandoEliminacion -[#green]-> EliminandoEspacio
+    note on link
+    <b>Sistema</b> presenta información del espacio a eliminar
+    • Código, nombre del espacio
+    • Edificio asociado, planta
+    • Capacidad, tipo de espacio, recursos
+    • Horario, accesibilidad, observaciones
+    • Presenta advertencia de eliminación
+    • Permite solicitar confirmar eliminación
+    • Permite solicitar cancelar eliminación
+    end note
+    
+    EliminandoEspacio -[#green]-> [*]
+    note on link
+    <b>Administrador</b> solicita confirmación de eliminación
+    <b>Sistema</b> permite solicitar confirmar eliminación
+    <b>Administrador</b> solicita confirmar eliminación
+    end note
+}
+
+eliminarEspacio -[#green]-> ESPACIOS_ABIERTO
+note on link
+abrirListaEspacios() - lista actualizada
+end note
+
+eliminarEspacio -[#blue]-> ESPACIOS_ABIERTO
+note on link
+abrirListaEspacios() - cancelar eliminación
+end note
+
+@enduml

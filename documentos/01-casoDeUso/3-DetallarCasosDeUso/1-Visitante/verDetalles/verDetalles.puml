@@ -1,0 +1,43 @@
+@startuml
+skinparam linetype polyline
+
+state verDetalles as "verDetalles()" {
+    state " " as SolicitandoDetalles
+    state ConsultandoDetalles
+    state c <<choice>>
+
+    [*] -[#green]-> SolicitandoDetalles 
+    note on link
+    <b>Visitante</b> solicita ver detalle 
+                     de un espacio
+    end note    
+    
+    SolicitandoDetalles -[#green]-> ConsultandoDetalles
+    note on link
+    <b>Sistema</b> presenta
+    • Detalles del espacio
+    end note
+    
+    ConsultandoDetalles -[#green]-> c
+    note on link
+    <b>Visitante</b> solicita
+    • continuar consultando
+    • salir de detalles
+    end note
+    
+    c -[#green]-> ConsultandoDetalles
+    note on link
+    continuar consultando
+    end note
+
+    c -[#green]-> [*]
+    note on link
+    salir de detalles
+    end note
+}
+
+verDetalles -[#green]-> ESPACIO_ABIERTO
+note on link
+regresa
+end note
+@enduml
