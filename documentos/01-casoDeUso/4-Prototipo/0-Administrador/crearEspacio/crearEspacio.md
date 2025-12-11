@@ -1,12 +1,12 @@
-Detalle y prototipado
+# crearEspacio() -> Detalle y prototipado
 
-## diagrama de especificación
+## Diagrama de especificación
 
 <div align=center>
 
-|![Caso de uso: actualizarEspacio()](/documentos/01-casoDeUso/3-DetallarCasosDeUso/0-Administrador/actualizarEspacio/actualizarEspacio.svg)|
+|![Caso de uso: actualizarEspacio()](/documentos/01-casoDeUso/3-DetallarCasosDeUso/0-Administrador/crearEspacio/crearEspacio.svg)|
 |-|
-|Código fuente: [especificacion.puml](/documentos/01-casoDeUso/3-DetallarCasosDeUso/0-Administrador/actualizarEspacio/actualizarEspacio.puml)|
+|Código fuente: [especificacion.puml](/documentos/01-casoDeUso/3-DetallarCasosDeUso/0-Administrador/crearEspacio/crearEspacio.puml)|
 
 </div>
 

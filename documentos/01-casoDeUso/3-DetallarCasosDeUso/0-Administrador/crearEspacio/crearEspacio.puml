@@ -2,6 +2,9 @@
 
 skinparam linetype polyline
 
+state in1 as "ESPACIOS_ABIERTO"
+in1 -[#green]-> crearEspacio
+
 state crearEspacio as "crearEspacio()" {
 
     state " " as SolicitandoDatos
@@ -29,7 +32,7 @@ state crearEspacio as "crearEspacio()" {
 
 crearEspacio -[#green]-> ESPACIO_ABIERTO
 note on link
-actualizarEspacio(espacioNuevo)
+editarEspacio(espacioNuevo)
 end note
 
 crearEspacio -[#blue]-> ESPACIOS_ABIERTO

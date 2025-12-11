@@ -1,6 +1,11 @@
 @startuml
 skinparam linetype polyline
 
+state in1 as "RECORRIDOS_ABIERTOS"
+in1 -[#green]-> seleccionarRecorrido
+state in2 as "ESPACIO_ABIERTO"
+in2 -[#green]-> seleccionarRecorrido
+
 state seleccionarRecorrido as "seleccionarRecorrido()" {
 
     state " " as ViendoDetalles

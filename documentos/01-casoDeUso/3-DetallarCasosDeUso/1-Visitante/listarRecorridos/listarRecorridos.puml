@@ -1,0 +1,51 @@
+@startuml
+skinparam linetype polyline
+
+state in1 as "UNIVERSIDAD_DISPONIBLE"
+in1 -[#green]-> listarRecorridos
+state in2 as "RECORRIDO_ABIERTO"
+in2 -[#green]-> listarRecorridos
+
+state listarRecorridos as "listarRecorridos()" {
+
+    state " " as CargandoRecorridos
+    state " " as MostrandoRecorridos
+
+    [*] -[#green]-> CargandoRecorridos 
+    note on link
+    <b>Visitante</b> solicita ver recorridos disponibles
+    end note    
+    
+    CargandoRecorridos -[#green]-> MostrandoRecorridos
+    note on link
+    <b>Sistema</b> presenta lista de recorridos
+    • Nombre del recorrido
+    • Descripción breve
+    • Número de espacios incluidos
+    • Permite solicitar seleccionar recorrido
+    • Permite solicitar regresar
+    end note
+    
+    MostrandoRecorridos -[#green]-> MostrandoRecorridos
+    note on link
+    <b>Visitante</b> visualiza detalles de recorridos
+    <b>Sistema</b> permite desplazarse por la lista
+    end note
+    
+    MostrandoRecorridos -[#green]-> [*]
+    note on link
+    <b>Visitante</b> solicita seleccionar un recorrido
+    o regresar al menú principal
+    end note
+}
+
+listarRecorridos -[#green]-> RECORRIDO_ABIERTO
+note on link
+seleccionarRecorrido()
+end note
+
+listarRecorridos -[#blue]-> UNIVERSIDAD_DISPONIBLE
+note on link
+regresar al menú principal
+end note
+@enduml

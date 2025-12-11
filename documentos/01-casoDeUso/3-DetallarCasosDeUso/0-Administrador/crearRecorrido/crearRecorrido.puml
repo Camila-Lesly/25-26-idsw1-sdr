@@ -2,6 +2,9 @@
 
 skinparam linetype polyline
 
+state in1 as "RECORRIDOS_ABIERTO"
+in1 -[#green]-> crearRecorrido
+
 state crearRecorrido as "crearRecorrido()" {
 
     state " " as SolicitandoDatos

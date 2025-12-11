@@ -2,6 +2,9 @@
 
 skinparam linetype polyline
 
+state in1 as "RECORRIDOS_ABIERTO"
+in1 -[#green]-> eliminarRecorrido
+
 state eliminarRecorrido as "eliminarRecorrido()" {
 
     state " " as ConfirmandoEliminacion

@@ -1,6 +1,6 @@
-Detalle y prototipado
+# eliminarEspacio() -> Detalle y prototipado
 
-## diagrama de especificación
+## Diagrama de especificación
 
 <div align=center>
 
@@ -18,7 +18,7 @@ Detalle y prototipado
 
 <div align=center>
 
-|![Wireframe: Eliminar espacios](/documentos/01-casoDeUso/4-Prototipo/0-Administrador/eliminarEspacio/eliminarEspacio.png)|
+|![Wireframe: Eliminar espacios](./eliminarEspacio.png)|
 |-|
 
 </div>

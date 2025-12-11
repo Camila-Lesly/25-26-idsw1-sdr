@@ -2,31 +2,35 @@
 
 <div align=center>
 
-|||||
-|-|-|-|-|
-|[Inicio](/README.md)|[Modelo del dominio](/documentos/00-modeloDeDominio/README.md)|**Casos de uso**
+|                      |                                                                |                  |     |
+| -------------------- | -------------------------------------------------------------- | ---------------- | --- |
+| [Inicio](/README.md) | [Modelo del dominio](/documentos/00-modeloDeDominio/README.md) | **Casos de uso** |
 
 </div>
 
 ## Actores y casos de uso identificados
 
+Diagrama que muestra los actores del sistema (Administrador y Visitante) y los casos de uso asociados a cada uno.
+
 <div align=center>
 
-|||
-|:-:|:-:|
-|![Actores y Casos de Uso](/documentos/01-casoDeUso/1-CasoDeUso/Administrador/administradorCasoDeUso.svg)|![Actores y Casos de Uso](/documentos/01-casoDeUso/1-CasoDeUso/Visitante/visitanteCasosDeUso.svg)|!
-|Código fuente:[ administrador.puml](/documentos/01-casoDeUso/1-CasoDeUso/Administrador/adminCasosDeUso.puml)|Código fuente: [visitante.puml](/documentos/01-casoDeUso/1-CasoDeUso/Visitante/visitanteCasosDeUso.puml)
+| **Administrador** | **Visitante** |
+| :----------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
+|   ![Actores y Casos de Uso](/documentos/01-casoDeUso/1-CasoDeUso/Administrador/adminCasosDeUso.svg)   |    ![Actores y Casos de Uso](/documentos/01-casoDeUso/1-CasoDeUso/Visitante/visitanteCasosDeUso.svg)     |
+| Código fuente:[ administrador.puml](/documentos/01-casoDeUso/1-CasoDeUso/Administrador/adminCasosDeUso.puml) | Código fuente: [visitante.puml](/documentos/01-casoDeUso/1-CasoDeUso/Visitante/visitanteCasosDeUso.puml) |
 
 </div>
 
 ## Diagrama de contexto
 
+Diagrama que representa el entorno del sistema y las interacciones entre los actores y el sistema de myUniverse.
+
 <div align=center>
 
-|||
-|:-:|:-:|
-|![Administrador](/documentos/01-casoDeUso/2-DiagramaDeContexto/diagramaDeContextoAdministrador.svg)|![Visitante](/documentos/01-casoDeUso/2-DiagramaDeContexto/diagramaDeContextoVisitante.svg)|!
-|Código fuente:[ administrador.puml](/documentos/01-casoDeUso/1-CasoDeUso/Administrador/adminCasosDeUso.puml)|Código fuente: [visitante.puml](/documentos/01-casoDeUso/1-CasoDeUso/Visitante/visitanteCasosDeUso.puml)
+| **Administrador** | **Visitante** |
+| :----------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
+|     ![Administrador](/documentos/01-casoDeUso/2-DiagramaDeContexto/diagramaDeContextoAdministrador.svg)      |       ![Visitante](/documentos/01-casoDeUso/2-DiagramaDeContexto/diagramaDeContextoVisitante.svg)        |
+| Código fuente:[ administrador.puml](/documentos/01-casoDeUso/1-CasoDeUso/Administrador/adminCasosDeUso.puml) | Código fuente: [visitante.puml](/documentos/01-casoDeUso/1-CasoDeUso/Visitante/visitanteCasosDeUso.puml) |
 
 </div>
 
@@ -34,12 +38,12 @@
 
 ### Diagramas detallados (Administrador)
 
-|Gestión de espacios|Gestión de recorridos|
-|-|-|
-|[verEspacios()](../4-Prototipo/0-Administrador/verEspacios/verEspacios.md)|[verRecorridos()](../4-Prototipo/0-Administrador/verRecorridos/verRecorridos.md)|
-|[crearEspacio()](../4-Prototipo/0-Administrador/crearEspacio/crearEspacio.md)|[crearRecorrido()](../4-Prototipo/0-Administrador/crearRecorrido/crearRecorrido.md)|
-|[actualizarEspacio()](../4-Prototipo/0-Administrador/actualizarEspacio/actualizarEspacio.md)|[actualizarRecorrido()](../4-Prototipo/0-Administrador/actualizarRecorrido/actualizarRecorrido.md)|
-|[eliminarEspacio()](../4-Prototipo/0-Administrador/eliminarEspacio/eliminarEspacio.md)|[eliminarRecorrido()](../4-Prototipo/0-Administrador/eliminarRecorrido/eliminarRecorrido.md)|
+| Gestión de espacios                                                                          | Gestión de recorridos                                                                              |
+| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [abrirEspacios()](../4-Prototipo/0-Administrador/abrirEspacios/abrirEspacios.md)                   | [abrirRecorridos()](../4-Prototipo/0-Administrador/abrirRecorridos/abrirRecorridos.md)                   |
+| [crearEspacio()](../4-Prototipo/0-Administrador/crearEspacio/crearEspacio.md)                | [crearRecorrido()](../4-Prototipo/0-Administrador/crearRecorrido/crearRecorrido.md)                |
+| [editarEspacio()](../4-Prototipo/0-Administrador/editarEspacio/editarEspacio.md) | [editarRecorrido()](../4-Prototipo/0-Administrador/editarRecorrido/editarRecorrido.md) |
+| [eliminarEspacio()](../4-Prototipo/0-Administrador/eliminarEspacio/eliminarEspacio.md)       | [eliminarRecorrido()](../4-Prototipo/0-Administrador/eliminarRecorrido/eliminarRecorrido.md)       |
 
 ### Diagramas detallados (Visitante) 
 
