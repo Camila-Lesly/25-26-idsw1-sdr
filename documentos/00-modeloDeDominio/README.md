@@ -12,7 +12,7 @@
 
 <div align=center>
 
-|![Diagrama de Clases](/documentos/00-modeloDeDominio/DiagramaDeClases/diagramaDeDominio.svg)
+|![Diagrama de Clases](/documentos/00-modeloDeDominio/DiagramaDeClases/diagramaDeClases.svg)
 |:-:
 |Código fuente: [diagrama-clases.puml](/documentos/00-modeloDeDominio/DiagramaDeClases/diagramaDeClases.puml)
 

@@ -8,4 +8,5 @@ Espacio -- Tipo
 
 Visitante --> Recorrido
 Recorrido --o Espacio
+Visitante ..> Espacio
 @enduml
