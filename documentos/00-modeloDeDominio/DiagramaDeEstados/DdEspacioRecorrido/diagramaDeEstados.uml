@@ -1,0 +1,8 @@
+@startuml
+
+state Progreso as "En Progreso"
+
+[*] --> Progreso : inicia recorrido
+
+Progreso --> [*] : finaliza recorrido / el recorrido es cancelado
+@enduml

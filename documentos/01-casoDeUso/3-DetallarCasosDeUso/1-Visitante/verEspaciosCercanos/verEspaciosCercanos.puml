@@ -1,11 +1,9 @@
-@startuml verEspaciosCercanos
-
+@startuml
 skinparam linetype polyline
 
 state verEspaciosCercanos as "verEspaciosCercanos()" {
-
     state " " as SolicitandoEspaciosCercanos
-    state "Consultando" as ConsultandoEspaicosCercanos
+    state ConsultandoEspaciosCercanos
     state c <<choice>>
 
     [*] -[#green]-> SolicitandoEspaciosCercanos 
@@ -13,20 +11,20 @@ state verEspaciosCercanos as "verEspaciosCercanos()" {
     <b>Visitante</b> solicita ver espacios cercanos
     end note    
     
-    SolicitandoEspaciosCercanos -[#green]-> ConsultandoEspaicosCercanos
+    SolicitandoEspaciosCercanos -[#green]-> ConsultandoEspaciosCercanos
     note on link
     <b>Sistema</b> presenta
     • lista de espacios cercanos
     end note
     
-    ConsultandoEspaicosCercanos -[#green]-> c
+    ConsultandoEspaciosCercanos -[#green]-> c
     note on link
     <b>Visitante</b> solicita
     • continuar consultando
     • salir de espacios cercanos
     end note
     
-    c -[#green]-> ConsultandoEspaicosCercanos
+    c -[#green]-> ConsultandoEspaciosCercanos
     note on link
     continuar consultando
     end note
@@ -37,9 +35,8 @@ state verEspaciosCercanos as "verEspaciosCercanos()" {
     end note
 }
 
-verEspaciosCercanos -[#green]-> Explorando
+verEspaciosCercanos -[#green]-> ESPACIO_ABIERTO
 note on link
 regresa
 end note
-
 @enduml

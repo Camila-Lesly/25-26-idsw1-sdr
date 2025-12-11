@@ -1,5 +1,4 @@
-@startuml seleccionarRecorrido
-
+@startuml
 skinparam linetype polyline
 
 state seleccionarRecorrido as "seleccionarRecorrido()" {
@@ -41,15 +40,14 @@ state seleccionarRecorrido as "seleccionarRecorrido()" {
 
 }
 
-    c -[#blue]-> CONSULTANDO
+    c -[#blue]-> RECORRIDOS_ABIERTOS
     note on link
     <b>Visitante</b> solicita cancelar
     verRecorridosDisponibles()
     end note
     
-    c -[#green]-> EXPLORANDO
+    c -[#green]-> RECORRIDO_ABIERTO
     note on link
     Consultando → EnRecorrido
     end note
-
 @enduml
