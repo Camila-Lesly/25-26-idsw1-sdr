@@ -39,11 +39,7 @@ state buscarEspacio as "buscarEspacio()" {
     end note
 }
 
-<<<<<<< HEAD
-buscarEspacio -[#green]-> Explorando
-=======
 buscarEspacio -[#green]->RECORRIDO_ABIERTO
->>>>>>> beta
 note on link
 regresa
 end note

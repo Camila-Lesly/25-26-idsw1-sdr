@@ -2,14 +2,8 @@
 skinparam linetype polyline
 
 state cambiarEspacio as "cambiarEspacio()" {
-<<<<<<<< HEAD:documentos/01-casoDeUso/3-DetallarCasosDeUso/1-Visitante/cambiarEspacio/cambiarEspacio.puml
-
-    state " " as SolicitandoCambio
-    state "SeleccionandoEsapcio" as SeleccionandoEspacio
-========
     state " " as SolicitandoCambio
     state SeleccionandoUbicacion
->>>>>>>> beta:documentos/01-casoDeUso/3-DetallarCasosDeUso/1-Visitante/cambiarDeEspacio/cambiarDeEspacio.puml
     state c <<choice>>
 
     [*] -[#green]-> SolicitandoCambio 
@@ -25,11 +19,7 @@ state cambiarEspacio as "cambiarEspacio()" {
     • Mapa interactivo
     end note
     
-<<<<<<<< HEAD:documentos/01-casoDeUso/3-DetallarCasosDeUso/1-Visitante/cambiarEspacio/cambiarEspacio.puml
-    SeleccionandoEspacio -[#green]-> c
-========
     SeleccionandoUbicacion -[#green]-> c 
->>>>>>>> beta:documentos/01-casoDeUso/3-DetallarCasosDeUso/1-Visitante/cambiarDeEspacio/cambiarDeEspacio.puml
     note on link
     <b>Visitante</b> solicita
     • confirmar nueva ubicación
@@ -42,16 +32,7 @@ state cambiarEspacio as "cambiarEspacio()" {
     end note
 }
 
-<<<<<<<< HEAD:documentos/01-casoDeUso/3-DetallarCasosDeUso/1-Visitante/cambiarEspacio/cambiarEspacio.puml
-cambiarEspacio -[#green]-> Explorando
-note on link
-regresa
-end note
-
-@enduml
-========
 ' ← CONTEXTUALIZADO correctamente:
 ESPACIO_ABIERTO --> cambiarEspacio : cambiarDeEspacio()
 cambiarEspacio --> ESPACIO_ABIERTO : ubicacionConfirmada()
 @enduml
->>>>>>>> beta:documentos/01-casoDeUso/3-DetallarCasosDeUso/1-Visitante/cambiarDeEspacio/cambiarDeEspacio.puml

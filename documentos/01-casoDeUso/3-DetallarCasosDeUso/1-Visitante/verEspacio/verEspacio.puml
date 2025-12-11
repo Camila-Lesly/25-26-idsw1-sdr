@@ -1,15 +1,7 @@
-<<<<<<<< HEAD:documentos/01-casoDeUso/3-DetallarCasosDeUso/1-Visitante/verEspacio/verEspacio.puml
-@startuml verEspacio
-
-skinparam linetype polyline
-
-state verEspacio as "verEspacio()" {
-========
 @startuml
 skinparam linetype polyline
 
 state verEspacioActual as "verEspacioActual()" {
->>>>>>>> beta:documentos/01-casoDeUso/3-DetallarCasosDeUso/1-Visitante/verEspacioActual/verEspacioActual.puml
 
     state " " as olicitandoVerUbicacion
     state "MostrandoUbicacion" as MostrandoUbicacion
@@ -40,11 +32,7 @@ state verEspacioActual as "verEspacioActual()" {
     end note
 }
 
-<<<<<<<< HEAD:documentos/01-casoDeUso/3-DetallarCasosDeUso/1-Visitante/verEspacio/verEspacio.puml
-verEspacio -[#green]-> Explorando
-========
 verEspacioActual -[#green]-> ESPACIO_ABIERTO
->>>>>>>> beta:documentos/01-casoDeUso/3-DetallarCasosDeUso/1-Visitante/verEspacioActual/verEspacioActual.puml
 note on link
 regresa
 end note
