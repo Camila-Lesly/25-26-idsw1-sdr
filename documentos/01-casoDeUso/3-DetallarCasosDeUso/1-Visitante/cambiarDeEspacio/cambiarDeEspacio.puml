@@ -2,11 +2,11 @@
 skinparam linetype polyline
 
 state in1 as "ESPACIO_ABIERTO"
-in1 -[#green]-> cambiarEspacio
+in1 -[#green]-> cambiarDeEspacio
 state in2 as "RECORRIDO_ABIERTO"
-in2 -[#green]-> cambiarEspacio
+in2 -[#green]-> cambiarDeEspacio
 
-state cambiarEspacio as "cambiarEspacio()" {
+state cambiarDeEspacio as "cambiarDeEspacio()" {
     state " " as SolicitandoCambio
     state SeleccionandoUbicacion
     state c <<choice>>
@@ -38,6 +38,6 @@ state cambiarEspacio as "cambiarEspacio()" {
 }
 
 ' ← CONTEXTUALIZADO correctamente:
-ESPACIO_ABIERTO --> cambiarEspacio : cambiarDeEspacio()
-cambiarEspacio --> ESPACIO_ABIERTO : ubicacionConfirmada()
+ESPACIO_ABIERTO --> cambiarDeEspacio : cambiarDeEspacio()
+cambiarDeEspacio --> ESPACIO_ABIERTO : ubicacionConfirmada()
 @enduml

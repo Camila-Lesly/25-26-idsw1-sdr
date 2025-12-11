@@ -6,7 +6,7 @@ actor "Visitante" as visitante
 
 package "Gestión de Espacio"{
     usecase verEspacio as "verEspacio()"
-    usecase cambiarEspacio as "cambiarEspacio()"
+    usecase cambiarDeEspacio as "cambiarDeEspacio()"
     usecase buscarEspacio as "buscarEspacio()"
     usecase verDetallesEspacio as "verDetallesEspacio()"
     usecase verEspaciosCercanos as "verEspaciosCercanos()"
@@ -14,19 +14,17 @@ package "Gestión de Espacio"{
 }
 
 package "Gestión de Recorrido"{
-    usecase verRecorridosDisponibles as "verRecorridosDisponibles()"
-    usecase salirrRecorrido as "salirRecorrido()"
+    usecase listarRecorridos as "listarRecorridos()"
     usecase seleccionarRecorrido as "seleccionarRecorrido()"
 }
 
 visitante --> (verEspacio)
-visitante --> (cambiarEspacio)
+visitante --> (cambiarDeEspacio)
 visitante --> (buscarEspacio)
 visitante --> (verDetallesEspacio)
 visitante --> (verEspaciosCercanos)
 visitante --> (verEspaciosPlanta)
 
 (seleccionarRecorrido) <-- visitante
-(verRecorridosDisponibles) <-- visitante
-(salirrRecorrido) <-- visitante
+(listarRecorridos) <-- visitante
 @enduml

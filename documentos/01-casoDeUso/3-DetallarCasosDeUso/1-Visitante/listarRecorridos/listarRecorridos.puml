@@ -1,7 +1,12 @@
 @startuml
 skinparam linetype polyline
 
-state verRecorridosDisponibles as "verRecorridosDisponibles()" {
+state in1 as "UNIVERSIDAD_DISPONIBLE"
+in1 -[#green]-> listarRecorridos
+state in2 as "RECORRIDO_ABIERTO"
+in2 -[#green]-> listarRecorridos
+
+state listarRecorridos as "listarRecorridos()" {
 
     state " " as CargandoRecorridos
     state " " as MostrandoRecorridos
@@ -34,12 +39,12 @@ state verRecorridosDisponibles as "verRecorridosDisponibles()" {
     end note
 }
 
-verRecorridosDisponibles -[#green]-> RECORRIDO_ABIERTO
+listarRecorridos -[#green]-> RECORRIDO_ABIERTO
 note on link
 seleccionarRecorrido()
 end note
 
-verRecorridosDisponibles -[#blue]-> UNIVERSIDAD_DISPONIBLE
+listarRecorridos -[#blue]-> UNIVERSIDAD_DISPONIBLE
 note on link
 regresar al menú principal
 end note
