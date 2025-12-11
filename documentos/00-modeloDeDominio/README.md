@@ -22,10 +22,10 @@
 
 <div align=center>
 
-||||
+|Espacio|Recorrido|Visitante|
 |:-:|:-:|:-:|
 |![Diagrama de Espacio](./DiagramaDeEstados/DdEEspacio/diagramaDeEstados.svg)|![Diagrama de Recorrido](./DiagramaDeEstados/DdEspacioRecorrido/diagramaDeEstados.svg)|![Diagrama de Visitante](./DiagramaDeEstados/DdEVisitante/diagramaDeEstados.svg)
-|Código fuente:[ Espacio](./DiagramaDeEstados/DdEEspacio/diagramaDeEstados.puml)|Código fuente: [Recorrido](./DiagramaDeEstados/DdEspacioRecorrido/diagramaDeEstados.uml)|Código fuente: [Visitante](./DiagramaDeEstados/DdEVisitante/diagramaDeEstados.puml)
+|[Código fuente](./DiagramaDeEstados/DdEEspacio/diagramaDeEstados.puml)|[Código fuente](./DiagramaDeEstados/DdEspacioRecorrido/diagramaDeEstados.uml)|[Código fuente](./DiagramaDeEstados/DdEVisitante/diagramaDeEstados.puml)
 
 </div>
 
