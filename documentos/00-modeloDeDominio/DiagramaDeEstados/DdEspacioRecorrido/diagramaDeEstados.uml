@@ -1,10 +1,8 @@
 @startuml
 
-[*] --> Disponible
+state Progreso as "En Progreso"
 
-state Disponible
-Disponible : Visualización habilitada / Interactuable.
+[*] --> Progreso : inicia recorrido
 
-Disponible --> Disponible : recorrer()
-Disponible --> [*] : salirDeRecorrido()
+Progreso --> [*] : finaliza recorrido / el recorrido es cancelado
 @enduml

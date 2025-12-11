@@ -1,24 +1,8 @@
 @startuml
 
-[*] --> Cerrado
+state consulta as "En Consulta"
 
-Cerrado --> Abierto : espacio abierto
-Abierto --> Cerrado : espacio cerrado
-
-Abierto --> EnUso : usuario entra
-EnUso --> Abierto : usuario sale
-
-Abierto --> Reservado : reserva creada
-Reservado --> Abierto : reserva cancelada
-Reservado --> EnUso : usuario con reserva llega
-
-Abierto --> Mantenimiento : mantenimiento iniciado
-EnUso --> Mantenimiento : desalojo / cierre forzoso
-Reservado --> Mantenimiento : mantenimiento urgente
-
-Mantenimiento --> Abierto : mantenimiento finalizado
-Mantenimiento --> Cerrado : cierre definitivo
-
-Cerrado --> Mantenimiento : revisión programada
+[*] --> consulta : visitante ingresa
+consulta --> [*] : visitante sale
 
 @enduml
