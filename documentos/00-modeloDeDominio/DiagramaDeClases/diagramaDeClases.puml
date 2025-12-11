@@ -7,6 +7,6 @@ Planta *-- Espacio
 Espacio -- Tipo
 
 Visitante --> Recorrido
-Recorrido --o Espacio
+Recorrido o-- Espacio
 Visitante ..> Espacio
 @enduml
