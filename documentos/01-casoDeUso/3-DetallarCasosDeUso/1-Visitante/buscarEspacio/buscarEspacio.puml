@@ -2,7 +2,7 @@
 
 skinparam linetype polyline
 
-state buscarUbicacion as "buscarUbicacion()" {
+state buscarEspacio as "buscarEspacio()" {
 
     state " " as SolicitandoBusqueda
     state "MostrandoResultados" as MostrandoResultados
@@ -40,7 +40,7 @@ state buscarUbicacion as "buscarUbicacion()" {
     end note
 }
 
-buscarUbicacion -[#green]-> Explorando
+buscarEspacio -[#green]-> Explorando
 note on link
 regresa
 end note

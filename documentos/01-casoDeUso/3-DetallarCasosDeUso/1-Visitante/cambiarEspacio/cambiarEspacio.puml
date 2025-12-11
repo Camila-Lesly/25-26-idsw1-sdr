@@ -2,10 +2,10 @@
 
 skinparam linetype polyline
 
-state cambiarUbicacion as "cambiarUbicacion()" {
+state cambiarEspacio as "cambiarEspacio()" {
 
     state " " as SolicitandoCambio
-    state "SeleccionandoUbicacion" as SeleccionandoUbicacion
+    state "SeleccionandoEsapcio" as SeleccionandoEspacio
     state c <<choice>>
 
     [*] -[#green]-> SolicitandoCambio 
@@ -14,14 +14,14 @@ state cambiarUbicacion as "cambiarUbicacion()" {
                      su ubicación actual
     end note    
     
-    SolicitandoCambio -[#green]-> SeleccionandoUbicacion
+    SolicitandoCambio -[#green]-> SeleccionandoEsapcio
     note on link
     <b>Sistema</b> presenta
     • Opciones de ubicación
     • Mapa interactivo
     end note
     
-    SeleccionandoUbicacion -[#green]-> c
+    SeleccionandoEspacio -[#green]-> c
     note on link
     <b>Visitante</b> solicita
     • confirmar nueva ubicación
@@ -34,7 +34,7 @@ state cambiarUbicacion as "cambiarUbicacion()" {
     end note
 }
 
-cambiarUbicacion -[#green]-> Explorando
+cambiarEspacio -[#green]-> Explorando
 note on link
 regresa
 end note
