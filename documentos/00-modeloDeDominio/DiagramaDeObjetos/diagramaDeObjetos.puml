@@ -13,7 +13,7 @@ object "edificioPrincipal : Region" as edificioPrincipal {
 }
 
 object "exterior : Region" as exterior {
-    nombre = "Zona exterior edificioPrincipal"
+    nombre = "Zona exterior"
 }
 
 '-------------------
