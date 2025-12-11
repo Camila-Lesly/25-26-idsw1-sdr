@@ -47,10 +47,11 @@ Diagrama que representa el entorno del sistema y las interacciones entre los act
 
 ### Diagramas detallados (Visitante) 
 
-| Recorridos y ubicación                                                                                        | Exploración de espacios                                                                        |
-| ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| [buscarEspacio()](../4-Prototipo/1-Visitante/buscarEspacio/buscarEspacio.md)                                  | [verDetalles()](../4-Prototipo/1-Visitante/verDetalles/verDetalles.md)                         |
-| [cambiarDeEspacio()](../4-Prototipo/1-Visitante/cambiarDeEspacio/cambiarDeEspacio.md)                         | [verEspaciosCercanos()](../4-Prototipo/1-Visitante/verEspaciosCercanos/verEspaciosCercanos.md) |
-| [verEspacio()](../4-Prototipo/1-Visitante/verEspacio/verEspacio.md)                         | [verEspaciosPlanta()](../4-Prototipo/1-Visitante/verEspaciosPlanta/verEspaciosPlanta.md)       |
-| [listarRecorridos()](../4-Prototipo/1-Visitante/listarRecorridos/listarRecorridos.md) |                                                                                                |
-| [seleccionarRecorrido()](../4-Prototipo/1-Visitante/seleccionarRecorrido/seleccionarRecorrido.md)             |                                                                                                |                                                                                              |
+|Gestión de recorridos|Gestión de espacios|
+|-|-|
+|[buscarEspacio()](../4-Prototipo/1-Visitante/buscarEspacio/buscarEspacio.md)|[verDetalles()](../4-Prototipo/1-Visitante/verDetalles/verDetalles.md)|
+|[cambiarDeEspacio()](../4-Prototipo/1-Visitante/cambiarDeEspacio/cambiarDeEspacio.md)|[verEspaciosCercanos()](../4-Prototipo/1-Visitante/verEspaciosCercanos/verEspaciosCercanos.md)|
+|[verUbicacionActual()](../4-Prototipo/1-Visitante/verUbicacionActual/verUbicacionActual.md)|[verEspaciosPlanta()](../4-Prototipo/1-Visitante/verEspaciosPlanta/verEspaciosPlanta.md)|
+|[verRecorridosDisponibles()](../4-Prototipo/1-Visitante/verRecorridosDisponibles/verRecorridosDisponibles.md)| |
+|[seleccionarRecorrido()](../4-Prototipo/1-Visitante/seleccionarRecorrido/seleccionarRecorrido.md)| |
+|[salirRecorrido()](../4-Prototipo/1-Visitante/salirRecorrido/salirRecorrido.md)| |
