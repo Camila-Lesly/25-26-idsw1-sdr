@@ -1,8 +1,11 @@
-@startuml actualizarEspacio
+@startuml editarEspacio
 
 skinparam linetype polyline
 
-state actualizarEspacio as "actualizarEspacio()" {
+state in2 as "ESPACIOS_ABIERTO"
+in2 -[#green]-> editarEspacio
+
+state editarEspacio as "editarEspacio()" {
 
     state " " as EditandoDatos
     state " " as GuardandoDatos 
@@ -43,12 +46,12 @@ state actualizarEspacio as "actualizarEspacio()" {
 
 }
 
-actualizarEspacio -[#green]-> ESPACIOS_ABIERTO
+editarEspacio -[#green]-> ESPACIOS_ABIERTO
 note on link
 abrirListaEspacios()
 end note
 
-actualizarEspacio -[#red]-> ESPACIOS_ABIERTO
+editarEspacio -[#red]-> ESPACIOS_ABIERTO
 note on link
 cancelar edición
 end note
