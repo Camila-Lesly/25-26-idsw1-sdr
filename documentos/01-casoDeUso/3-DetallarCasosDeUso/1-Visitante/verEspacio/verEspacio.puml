@@ -1,20 +1,20 @@
-@startuml verUbicacionActual
+@startuml verEspacio
 
 skinparam linetype polyline
 
-state verUbicacionActual as "verUbicacionActual()" {
+state verEspacio as "verEspacio()" {
 
-    state " " as SolicitandoVerUbicacion
+    state " " as olicitandoVerUbicacion
     state "MostrandoUbicacion" as MostrandoUbicacion
     state c <<choice>>
 
-    [*] -[#green]-> SolicitandoVerUbicacion 
+    [*] -[#green]-> olicitandoVerUbicacion 
     note on link
     <b>Visitante</b> solicita ver 
                      su ubicación actual
     end note    
     
-    SolicitandoVerUbicacion -[#green]-> MostrandoUbicacion
+    olicitandoVerUbicacion -[#green]-> MostrandoUbicacion
     note on link
     <b>Sistema</b> presenta
     • Ubicación actual en mapa
@@ -33,7 +33,7 @@ state verUbicacionActual as "verUbicacionActual()" {
     end note
 }
 
-verUbicacionActual -[#green]-> Explorando
+verEspacio -[#green]-> Explorando
 note on link
 regresa
 end note
