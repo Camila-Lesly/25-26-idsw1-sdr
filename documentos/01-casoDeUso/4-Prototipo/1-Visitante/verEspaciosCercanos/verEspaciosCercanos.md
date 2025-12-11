@@ -18,7 +18,7 @@
 
 <div align=center>
 
-|![Wireframe: Ver espacios cercanos](/documentos/01-casoDeUso/4-Prototipo/1-Visitante/verEspaciosCercanos/verEspaciosCercanos.png)|
+|![Wireframe: Ver espacios cercanos](verEspaciosCercanos.png)|
 |-|
 
 </div>

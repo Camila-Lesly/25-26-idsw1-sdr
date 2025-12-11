@@ -1,12 +1,12 @@
-# verRecorridosDisponibles() -> Detalle y prototipado
+# listarRecorridos() -> Detalle y prototipado
 
 ## Diagrama de especificación
 
 <div align=center>
 
-|![Caso de uso: verRecorridosDisponibles()](/documentos/01-casoDeUso/3-DetallarCasosDeUso/1-Visitante/verRecorridosDisponibles/verRecorridosDisponibles.svg)|
+|![](/documentos/01-casoDeUso/3-DetallarCasosDeUso/1-Visitante/listarRecorridos/listarRecorridos.svg)|
 |-|
-|Código fuente: [especificacion.puml](/documentos/01-casoDeUso/3-DetallarCasosDeUso/1-Visitante/verRecorridosDisponibles/verRecorridosDisponibles.puml)|
+|Código fuente: [especificacion.puml](/documentos/01-casoDeUso/3-DetallarCasosDeUso/1-Visitante/listarRecorridos/listarRecorridos.puml)|
 
 </div>
 
@@ -18,7 +18,7 @@
 
 <div align=center>
 
-|![Wireframe: Ver recorridos disponibles](/documentos/01-casoDeUso/4-Prototipo/1-Visitante/verRecorridosDisponibles/verRecorridosDisponibles.png)|
+|![Wireframe: Ver recorridos disponibles](listarRecorridos.png)|
 |-|
 
 </div>

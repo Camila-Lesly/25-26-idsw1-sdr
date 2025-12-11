@@ -18,7 +18,7 @@
 
 <div align=center>
 
-|![Wireframe: Ver espacios planta](/documentos/01-casoDeUso/4-Prototipo/1-Visitante/verEspaciosPlanta/verEspaciosPlanta.png)|
+|![Wireframe: Ver espacios planta](verEspaciosPlanta.png)|
 |-|
 
 </div>

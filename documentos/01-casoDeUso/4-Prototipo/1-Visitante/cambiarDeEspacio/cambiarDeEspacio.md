@@ -18,7 +18,7 @@
 
 <div align=center>
 
-|![Wireframe: Cambiar de espacio](/documentos/01-casoDeUso/4-Prototipo/1-Visitante/cambiarDeEspacio/cambiarDeEspacio.png)|
+|![Wireframe: Cambiar de espacio](cambiarDeEspacio.png)|
 |-|
 
 </div>

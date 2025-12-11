@@ -6,7 +6,7 @@
 
 |![Caso de uso: crearRecorrido()](/documentos/01-casoDeUso/3-DetallarCasosDeUso/0-Administrador/crearRecorrido/crearRecorrido.svg)|
 |-|
-|Código fuente: [especificacion.puml](/documentos/01-casoDeUso/3-DetallarCasosDeUso/0-Administrador/actualizarEspacio/actualizarEspacio.puml)|
+|Código fuente: [especificacion.puml](/documentos/01-casoDeUso/3-DetallarCasosDeUso/0-Administrador/crearRecorrido/crearRecorrido.puml)|
 
 </div>
 
@@ -18,7 +18,7 @@
 
 <div align=center>
 
-|![Wireframe: crear recorrido](/documentos/01-casoDeUso/4-Prototipo/0-Administrador/crearRecorrido/crearRecorrido.png)|
+|![Wireframe: crear recorrido](crearRecorrido.png)|
 |-|
 
 </div>

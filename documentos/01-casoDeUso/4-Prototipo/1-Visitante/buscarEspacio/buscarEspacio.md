@@ -18,7 +18,7 @@
 
 <div align=center>
 
-|![Wireframe: Buscar espacio](/documentos/01-casoDeUso/4-Prototipo/1-Visitante/buscarEspacio/buscarEspacio.png)|
+|![Wireframe: Buscar espacio](buscarEspacio.png)|
 |-|
 
 </div>

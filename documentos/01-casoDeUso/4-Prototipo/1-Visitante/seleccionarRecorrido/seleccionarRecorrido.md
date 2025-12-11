@@ -18,7 +18,7 @@
 
 <div align=center>
 
-|![Wireframe: Seleccionar recorrido](/documentos/01-casoDeUso/4-Prototipo/1-Visitante/seleccionarRecorrido/seleccionarRecorrido.png)|
+|![Wireframe: Seleccionar recorrido](seleccionarRecorrido.png)|
 |-|
 
 </div>

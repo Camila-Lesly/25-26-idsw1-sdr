@@ -18,7 +18,7 @@
 
 <div align=center>
 
-|![Wireframe: Ver detalles](/documentos/01-casoDeUso/4-Prototipo/1-Visitante/verDetalles/verDetalles.png)|
+|![Wireframe: Ver detalles](verDetalles.png)|
 |-|
 
 </div>
