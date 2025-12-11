@@ -1,6 +1,6 @@
-Detalle y prototipado
+# verEspacios() -> Detalle y prototipado
 
-## diagrama de especificación
+## Diagrama de especificación
 
 <div align=center>
 
