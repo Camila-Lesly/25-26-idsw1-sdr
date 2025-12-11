@@ -1,0 +1,42 @@
+@startuml eliminarRecorrido
+
+skinparam linetype polyline
+
+state eliminarRecorrido as "eliminarRecorrido()" {
+
+    state " " as ConfirmandoEliminacion
+    state " " as EliminandoRecorrido
+
+    [*] -[#green]-> ConfirmandoEliminacion 
+    note on link
+    <b>Administrador</b> solicita eliminar recorrido
+    end note    
+    
+    ConfirmandoEliminacion -[#green]-> EliminandoRecorrido
+    note on link
+    <b>Sistema</b> presenta información del recorrido a eliminar
+    • Nombre del recorrido, descripción
+    • Puntos de interés (POI) y orden
+    • Punto de inicio y punto final
+    • Presenta advertencia de eliminación
+    • Permite solicitar confirmar eliminación
+    • Permite solicitar cancelar eliminación
+    end note
+    
+    EliminandoRecorrido -[#green]-> [*]
+    note on link
+    <b>Administrador</b> solicita confirmar eliminación
+    end note
+}
+
+eliminarRecorrido -[#green]-> RECORRIDOS_ABIERTO
+note on link
+abrirRecorridos() - lista actualizada
+end note
+
+eliminarRecorrido -[#blue]-> RECORRIDOS_ABIERTO
+note on link
+abrirRecorridos() - cancelar eliminación
+end note
+
+@enduml
