@@ -10,22 +10,26 @@
 
 ## Actores y casos de uso identificados
 
+Diagrama que muestra los actores del sistema (Administrador y Visitante) y los casos de uso asociados a cada uno.
+
 <div align=center>
 
-|                                                                                                              |                                                                                                          |
+| **Administrador** | **Visitante** |
 | :----------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
-|   ![Actores y Casos de Uso](/documentos/01-casoDeUso/1-CasoDeUso/Administrador/adminCasosDeUso.svg)   |    ![Actores y Casos de Uso](/documentos/01-casoDeUso/1-CasoDeUso/Visitante/visitanteCasosDeUso.svg)     | ! |
+|   ![Actores y Casos de Uso](/documentos/01-casoDeUso/1-CasoDeUso/Administrador/adminCasosDeUso.svg)   |    ![Actores y Casos de Uso](/documentos/01-casoDeUso/1-CasoDeUso/Visitante/visitanteCasosDeUso.svg)     |
 | Código fuente:[ administrador.puml](/documentos/01-casoDeUso/1-CasoDeUso/Administrador/adminCasosDeUso.puml) | Código fuente: [visitante.puml](/documentos/01-casoDeUso/1-CasoDeUso/Visitante/visitanteCasosDeUso.puml) |
 
 </div>
 
 ## Diagrama de contexto
 
+Diagrama que representa el entorno del sistema y las interacciones entre los actores y el sistema de myUniverse.
+
 <div align=center>
 
-|                                                                                                              |                                                                                                          |
+| **Administrador** | **Visitante** |
 | :----------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
-|     ![Administrador](/documentos/01-casoDeUso/2-DiagramaDeContexto/diagramaDeContextoAdministrador.svg)      |       ![Visitante](/documentos/01-casoDeUso/2-DiagramaDeContexto/diagramaDeContextoVisitante.svg)        | ! |
+|     ![Administrador](/documentos/01-casoDeUso/2-DiagramaDeContexto/diagramaDeContextoAdministrador.svg)      |       ![Visitante](/documentos/01-casoDeUso/2-DiagramaDeContexto/diagramaDeContextoVisitante.svg)        |
 | Código fuente:[ administrador.puml](/documentos/01-casoDeUso/1-CasoDeUso/Administrador/adminCasosDeUso.puml) | Código fuente: [visitante.puml](/documentos/01-casoDeUso/1-CasoDeUso/Visitante/visitanteCasosDeUso.puml) |
 
 </div>
