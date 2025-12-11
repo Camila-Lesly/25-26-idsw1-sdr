@@ -1,8 +1,11 @@
-@startuml actualizarRecorrido
+@startuml editarRecorrido
 
 skinparam linetype polyline
 
-state actualizarRecorrido as "actualizarRecorrido()" {
+state in1 as "RECORRIDOS_ABIERTO"
+in1 -[#green]-> editarRecorrido
+
+state editarRecorrido as "editarRecorrido()" {
 
     state " " as EditandoDatos
     state " " as GuardandoDatos 
@@ -43,12 +46,12 @@ state actualizarRecorrido as "actualizarRecorrido()" {
 
 }
 
-actualizarRecorrido -[#green]-> RECORRIDOS_ABIERTO
+editarRecorrido -[#green]-> RECORRIDOS_ABIERTO
 note on link
 abrirRecorridos()
 end note
 
-actualizarRecorrido -[#red]-> RECORRIDOS_ABIERTO
+editarRecorrido -[#red]-> RECORRIDOS_ABIERTO
 note on link
 cancelar edición
 end note

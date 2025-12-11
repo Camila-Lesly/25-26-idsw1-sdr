@@ -2,6 +2,11 @@
 
 skinparam linetype polyline
 
+state in1 as "UNIVERSIDAD_DISPONIBLE"
+in1 -[#green]-> abrirEspacios
+state in2 as "ESPACIO_ABIERTO"
+in2 -[#green]-> abrirEspacios
+
 state abrirEspacios as "abrirEspacios()" {
 
     state " " as MostrandoLista
