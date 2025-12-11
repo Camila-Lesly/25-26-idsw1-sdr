@@ -1,6 +1,9 @@
 @startuml
 skinparam linetype polyline
 
+state in1 as "ESPACIO_ABIERTO"
+in1 -[#green]-> cambiarEspacio
+
 state cambiarEspacio as "cambiarEspacio()" {
     state " " as SolicitandoCambio
     state SeleccionandoUbicacion

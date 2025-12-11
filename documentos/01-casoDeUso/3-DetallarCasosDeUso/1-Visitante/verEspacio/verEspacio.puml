@@ -1,7 +1,13 @@
 @startuml
 skinparam linetype polyline
 
-state verEspacioActual as "verEspacioActual()" {
+
+state in1 as "RECORRIDO_ABIERTOS"
+in1 -[#green]-> verEspacio
+state in2 as "ESPACIO_ABIERTO"
+in2 -[#green]-> verEspacio
+
+state verEspacio as "verEspacio()" {
 
     state " " as olicitandoVerUbicacion
     state "MostrandoUbicacion" as MostrandoUbicacion
@@ -32,7 +38,7 @@ state verEspacioActual as "verEspacioActual()" {
     end note
 }
 
-verEspacioActual -[#green]-> ESPACIO_ABIERTO
+verEspacio -[#green]-> ESPACIO_ABIERTO
 note on link
 regresa
 end note

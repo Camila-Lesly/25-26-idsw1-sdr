@@ -1,6 +1,11 @@
 @startuml
 skinparam linetype polyline
 
+state in1 as "RECORRIDO_ABIERTOS"
+in1 -[#green]-> verEspaciosCercanos
+state in2 as "ESPACIO_ABIERTO"
+in2 -[#green]-> verEspaciosCercanos
+
 state verEspaciosCercanos as "verEspaciosCercanos()" {
     state " " as SolicitandoEspaciosCercanos
     state ConsultandoEspaciosCercanos
