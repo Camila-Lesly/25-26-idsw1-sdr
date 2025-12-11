@@ -1,10 +1,10 @@
-# verRecorridos() -> Detalle y prototipado
+# abrirRecorridos() -> Detalle y prototipado
 
 ## Diagrama de especificación
 
 <div align=center>
 
-|![Caso de uso: verRecorrido()](/documentos/01-casoDeUso/3-DetallarCasosDeUso/0-Administrador/abrirRecorridos/abrirRecorridos.svg)|
+|![Caso de uso: abrirRecorrido()](/documentos/01-casoDeUso/3-DetallarCasosDeUso/0-Administrador/abrirRecorridos/abrirRecorridos.svg)|
 |-|
 |Código fuente: [especificacion.puml](/documentos/01-casoDeUso/3-DetallarCasosDeUso/0-Administrador/abrirRecorridos/abrirRecorridos.puml)|
 
@@ -14,11 +14,11 @@
 
 ### Wireframes
 
-#### Pantalla: ver recorridos
+#### Pantalla: abrir recorridos
 
 <div align=center>
 
-|![Wireframe: Ver recorridos](./abrirRecorridos.png)|
+|![Wireframe: abrir recorridos](./abrirRecorridos.png)|
 |-|
 
 </div>

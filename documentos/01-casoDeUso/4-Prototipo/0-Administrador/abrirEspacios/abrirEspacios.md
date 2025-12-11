@@ -1,10 +1,10 @@
-# verEspacios() -> Detalle y prototipado
+# abrirEspacios() -> Detalle y prototipado
 
 ## Diagrama de especificación
 
 <div align=center>
 
-|![Caso de uso: verEspacio()](/documentos/01-casoDeUso/3-DetallarCasosDeUso/0-Administrador/abrirEspacios/abrirEspacios.svg)|
+|![Caso de uso: abrirEspacio()](/documentos/01-casoDeUso/3-DetallarCasosDeUso/0-Administrador/abrirEspacios/abrirEspacios.svg)|
 |-|
 |Código fuente: [especificacion.puml](/documentos/01-casoDeUso/3-DetallarCasosDeUso/0-Administrador/abrirEspacios/abrirEspacios.svg)|
 
@@ -14,11 +14,11 @@
 
 ### Wireframes
 
-#### Pantalla: ver espacios
+#### Pantalla: abrir espacios
 
 <div align=center>
 
-|![Wireframe: Ver espacios](./abrirEspacios.png)|
+|![Wireframe: abrir espacios](./abrirEspacios.png)|
 |-|
 
 </div>
