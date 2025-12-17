@@ -21,22 +21,22 @@ ListRecorridos --> Universidad : abrirUniversidad()
 
 ' --- Seleccionar recorrido ---
 ListRecorridos --> Recorrido : seleccionarRecorrido()
-Recorrido --> ListRecorridos : abrirRecorridos()
+Recorrido --> ListRecorridos : listarRecorridos()
 
 ' --- Acciones sobre espacio ---
 Recorrido --> Espacio : buscarEspacio()
-Recorrido --> Espacio : verDetallesEspacio()
+Recorrido --> Espacio : verDetalles()
 Recorrido --> Espacio : verEspaciosCercanos()
 Recorrido --> Espacio : verEspaciosPlanta()
-Recorrido --> Espacio : verEspacioActual()
+Recorrido --> Espacio : verEspacio()
 Recorrido --> Espacio : cambiarDeEspacio()
 
 
-Espacio --> Espacio : verDetallesEspacio()
+Espacio --> Espacio : verDetalles()
 Espacio --> Espacio : verEspaciosCercanos()
 Espacio --> Espacio : verEspaciosPlanta()
 Espacio --> Espacio : cambiarDeEspacio()
-Espacio --> Espacio : verEspacioActual()
+Espacio --> Espacio : verEspacio()
 Espacio --> Recorrido :seleccionarRecorrido()
 
 @enduml

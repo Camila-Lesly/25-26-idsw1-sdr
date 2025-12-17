@@ -8,26 +8,24 @@ package "Gestión de Espacios"{
     usecase crearEspacio as "crearEspacio()"
     usecase verEspacios as "verEspacios()"
     usecase eliminarEspacio as "eliminarEspacio()"
-    usecase actualizarEspacio as "actualizarEspacio()"
+    usecase editarEspacio as "editarEspacio()"
 }
 
 package "Gestión de Recorridos"{
     usecase crearRecorrido as "crearRecorrido()"
     usecase verRecorridos as "verRecorridos()"
     usecase eliminarRecorrido as "eliminarRecorrido()"
-    usecase actualizarRecorrido as "actualizarRecorrido()"
+    usecase editarRecorrido as "editarRecorrido()"
 }
 
 (crearEspacio) <-- admin
 (verEspacios) <-- admin
 (eliminarEspacio) <-- admin
-(actualizarEspacio) <-- admin
+(editarEspacio) <-- admin
 
 (crearRecorrido) <-- admin
 (verRecorridos) <-- admin
 (eliminarRecorrido) <-- admin
-(actualizarRecorrido) <-- admin
-
-
+(editarRecorrido) <-- admin
 
 @enduml

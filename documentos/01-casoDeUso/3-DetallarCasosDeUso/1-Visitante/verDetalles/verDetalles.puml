@@ -1,6 +1,11 @@
 @startuml
 skinparam linetype polyline
 
+state in1 as "RECORRIDO_ABIERTOS"
+in1 -[#green]-> verDetalles
+state in2 as "ESPACIO_ABIERTO"
+in2 -[#green]-> verDetalles
+
 state verDetalles as "verDetalles()" {
     state " " as SolicitandoDetalles
     state ConsultandoDetalles

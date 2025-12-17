@@ -2,6 +2,9 @@
 
 skinparam linetype polyline
 
+state in1 as "ESPACIOS_ABIERTO"
+in1 -[#green]-> eliminarEspacio
+
 state eliminarEspacio as "eliminarEspacio()" {
 
     state " " as ConfirmandoEliminacion

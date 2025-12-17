@@ -1,0 +1,62 @@
+@startuml abrirEspacios
+
+skinparam linetype polyline
+
+state in1 as "UNIVERSIDAD_DISPONIBLE"
+in1 -[#green]-> abrirEspacios
+state in2 as "ESPACIO_ABIERTO"
+in2 -[#green]-> abrirEspacios
+
+state abrirEspacios as "abrirEspacios()" {
+
+    state " " as MostrandoLista
+    state " " as FiltrandoLista
+
+    [*] -[#green]-> MostrandoLista 
+    note on link
+    <b>Administrador</b> solicita abrir espacios
+    end note    
+    
+    MostrandoLista -[#green]-> FiltrandoLista
+    note on link
+    <b>Sistema</b> presenta lista de espacios
+    • ID y nombre de cada espacio
+    • Permite solicitar filtrar lista
+    • Permite solicitar crear espacio nuevo
+    • Permite solicitar eliminar espacio
+    • Permite solicitar editar espacio
+    end note
+    
+    FiltrandoLista -[#green]-> FiltrandoLista
+    note on link
+    <b>Administrador</b> solicita filtrar lista
+    <b>Sistema</b> presenta lista filtrada
+    end note
+    
+    FiltrandoLista -[#green]-> [*]
+    note on link
+    <b>Administrador</b> solicita una de las opciones
+    end note
+}
+
+abrirEspacios -[#green]-> ESPACIO_ABIERTO
+note on link
+editarEspacio()
+end note
+
+abrirEspacios -[#green]-> ESPACIO_ABIERTO
+note on link
+crearEspacio()
+end note
+
+abrirEspacios -[#green]-> ESPACIOS_ABIERTO
+note on link
+eliminarEspacio()
+end note
+
+abrirEspacios -[#green]-> UNIVERSIDAD_DISPONIBLE
+note on link
+completarGestion()
+end note
+
+@enduml
