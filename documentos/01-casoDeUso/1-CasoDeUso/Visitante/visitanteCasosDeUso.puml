@@ -4,7 +4,7 @@ left to right direction
 
 actor "Visitante" as visitante
 
-package "Gestión de Espacio"{
+package "Interacción de Espacios"{
     usecase verEspacio as "verEspacio()"
     usecase cambiarDeEspacio as "cambiarDeEspacio()"
     usecase buscarEspacio as "buscarEspacio()"
@@ -13,7 +13,7 @@ package "Gestión de Espacio"{
     usecase verEspaciosPlanta as "verEspaciosPlanta()"
 }
 
-package "Gestión de Recorrido"{
+package "Interacción de Recorridos"{
     usecase listarRecorridos as "listarRecorridos()"
     usecase seleccionarRecorrido as "seleccionarRecorrido()"
 }
@@ -27,4 +27,5 @@ visitante --> (verEspaciosPlanta)
 
 (seleccionarRecorrido) <-- visitante
 (listarRecorridos) <-- visitante
+
 @enduml
