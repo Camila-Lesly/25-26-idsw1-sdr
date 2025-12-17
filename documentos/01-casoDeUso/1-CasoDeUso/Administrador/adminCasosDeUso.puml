@@ -3,29 +3,82 @@
 left to right direction
 
 actor "Administrador" as admin
+actor "Visitante" as visitante
 
-package "Gestión de Espacios"{
+visitante <|-up- admin 
+
+package "Gestión de Universidad"{
+  package "Gestión de Regiones"{
+    usecase crearRegion as "crearRegion()"
+    usecase verRegiones as "verRegiones()"
+    usecase editarRegion as "editarRegion()"
+    usecase eliminarRegion as "eliminarRegion()"
+  }
+
+  package "Gestión de Plantas"{
+    usecase crearPlanta as "crearPlanta()"
+    usecase verPlantas as "verPlantas()"
+    usecase editarPlanta as "editarPlanta()"
+    usecase eliminarPlanta as "eliminarPlanta()"
+  }
+  
+  package "Gestión de Espacios"{
     usecase crearEspacio as "crearEspacio()"
     usecase verEspacios as "verEspacios()"
-    usecase eliminarEspacio as "eliminarEspacio()"
     usecase editarEspacio as "editarEspacio()"
+    usecase eliminarEspacio as "eliminarEspacio()"
+  }
 }
 
 package "Gestión de Recorridos"{
-    usecase crearRecorrido as "crearRecorrido()"
-    usecase verRecorridos as "verRecorridos()"
-    usecase eliminarRecorrido as "eliminarRecorrido()"
-    usecase editarRecorrido as "editarRecorrido()"
+  usecase crearRecorrido as "crearRecorrido()"
+  usecase verRecorridos as "verRecorridos()"
+  usecase editarRecorrido as "editarRecorrido()"
+  usecase eliminarRecorrido as "eliminarRecorrido()"
 }
+
+package "Interacción de Espacios"{
+    usecase verEspacio as "verEspacio()"
+    usecase cambiarDeEspacio as "cambiarDeEspacio()"
+    usecase buscarEspacio as "buscarEspacio()"
+    usecase verDetallesEspacio as "verDetallesEspacio()"
+    usecase verEspaciosCercanos as "verEspaciosCercanos()"
+    usecase verEspaciosPlanta as "verEspaciosPlanta()"
+}
+
+package "Interacción de Recorridos"{
+    usecase listarRecorridos as "listarRecorridos()"
+    usecase seleccionarRecorrido as "seleccionarRecorrido()"
+}
+
+(crearRegion) <-- admin
+(verRegiones) <-- admin
+(editarRegion) <-- admin
+(eliminarRegion) <-- admin
+
+(crearPlanta) <-- admin
+(verPlantas) <-- admin
+(editarPlanta) <-- admin
+(eliminarPlanta) <-- admin
 
 (crearEspacio) <-- admin
 (verEspacios) <-- admin
-(eliminarEspacio) <-- admin
 (editarEspacio) <-- admin
+(eliminarEspacio) <-- admin
 
 (crearRecorrido) <-- admin
 (verRecorridos) <-- admin
-(eliminarRecorrido) <-- admin
 (editarRecorrido) <-- admin
+(eliminarRecorrido) <-- admin
+
+visitante --> (verEspacio)
+visitante --> (cambiarDeEspacio)
+visitante --> (buscarEspacio)
+visitante --> (verDetallesEspacio)
+visitante --> (verEspaciosCercanos)
+visitante --> (verEspaciosPlanta)
+
+visitante --> (seleccionarRecorrido)
+visitante --> (listarRecorridos)
 
 @enduml
