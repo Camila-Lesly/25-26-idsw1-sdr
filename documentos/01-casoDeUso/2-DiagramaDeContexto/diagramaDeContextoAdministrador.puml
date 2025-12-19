@@ -4,8 +4,12 @@ left to right direction
 skinparam linetype polyline
 
 state "SESION_CERRADA" as NoAuth
-state "UNIVERSIDAD_DISPONIBLE" as Menu
+state "UNIVERSIDAD_DISPONIBLE" as UnivDisponible
 
+state "REGIONES_ABIERTO" as ListRegiones
+state "REGION_ABIERTO" as EditRegion
+state "PLANTAS_ABIERTO" as ListPlantas
+state "PLANTA_ABIERTO" as EditPlanta
 state "ESPACIOS_ABIERTO" as ListEspacios
 state "ESPACIO_ABIERTO" as EditEspacio
 state "RECORRIDOS_ABIERTO" as ListRecorridos
@@ -13,29 +17,40 @@ state "RECORRIDO_ABIERTO" as EditRecorrido
 
 [*] --> NoAuth
 
-NoAuth --> Menu : iniciarSesion()
+NoAuth --> UnivDisponible : iniciarSesion()
+UnivDisponible --> NoAuth : cerrarSesion()
 
-Menu --> NoAuth : cerrarSesion()
-Menu --> ListEspacios: abrirEspacios()
-Menu --> ListRecorridos: abrirRecorridos()
+UnivDisponible --> ListRegiones : abrirRegiones()
+ListRegiones --> UnivDisponible : completarGestion()
+UnivDisponible --> ListPlantas : abrirPlantas()
+ListPlantas --> UnivDisponible : completarGestion()
+UnivDisponible --> ListEspacios : abrirEspacios()
+ListEspacios --> UnivDisponible : completarGestion()
+UnivDisponible --> ListRecorridos : abrirRecorridos()
+ListRecorridos --> UnivDisponible : completarGestion()
 
+ListRegiones --> EditRegion: crearRegion()
+ListRegiones --> EditRegion: editarRegion()
+ListRegiones --> ListRegiones: eliminarRegion()
+EditRegion --> EditRegion: editarRegion()
+EditRegion --> ListRegiones: abrirRegiones()
+
+ListPlantas --> EditPlanta: crearPlanta()
+ListPlantas --> EditPlanta: editarPlanta()
+ListPlantas --> ListPlantas: eliminarPlanta()
+EditPlanta --> EditPlanta: editarPlanta()
+EditPlanta --> ListPlantas: abrirPlantas()
 
 ListEspacios --> EditEspacio: crearEspacio()
 ListEspacios --> EditEspacio: editarEspacio()
 ListEspacios --> ListEspacios: eliminarEspacio()
-
 EditEspacio --> EditEspacio: editarEspacio()
 EditEspacio --> ListEspacios: abrirEspacios()
 
 ListRecorridos --> EditRecorrido: crearRecorrido()
 ListRecorridos --> EditRecorrido: editarRecorrido()
 ListRecorridos --> ListRecorridos: eliminarRecorrido()
-
 EditRecorrido --> EditRecorrido: editarRecorrido()
 EditRecorrido --> ListRecorridos: abrirRecorridos()
-
-
-ListEspacios --> Menu: completarGestion()
-ListRecorridos --> Menu: completarGestion()
 
 @enduml
